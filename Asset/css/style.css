@@ -31,7 +31,8 @@ nav input {
     background: var(--main-color-orange);
     color: white;
     border: none;
-    padding: 20px}
+    padding: 20px
+}
 nav input:hover {
     box-shadow: 0 0 7px 2px var(--main-color-bleu);
 }
@@ -43,7 +44,6 @@ Nav a{
     font-size: 25px;
 }
 Nav a:hover{
-    text-decoration:none;
     color:var(--main-color-bleu);
     text-decoration: underline;
 }
