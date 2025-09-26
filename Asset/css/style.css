@@ -1,3 +1,49 @@
+:root {
+    --main-color-bleu: #005baa;
+    --main-color-orange: #df6824;
+}
+*{
+    margin: 0;
+    font-family: "Gill Sans", sans-serif;
+}
 h1{
     color:yellow;
+}
+.logo{
+    width:200px;
+    height:auto;
+
+}
+nav{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    border-bottom: var(--main-color-bleu) solid 5px;
+    box-shadow: #000000 0 0 5px;
+    justify-content: space-around;
+
+}
+
+nav input {
+    display: flex;
+    border-radius: 50px;
+    font-size: 25px;
+    background: var(--main-color-orange);
+    color: white;
+    border: none;
+    padding: 20px}
+nav input:hover {
+    box-shadow: 0 0 7px 2px var(--main-color-bleu);
+}
+
+Nav a{
+    text-decoration:none;
+    color:black;
+    display:flex;
+    font-size: 25px;
+}
+Nav a:hover{
+    text-decoration:none;
+    color:var(--main-color-bleu);
+    text-decoration: underline;
 }
