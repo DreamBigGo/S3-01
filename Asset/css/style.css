@@ -47,3 +47,6 @@ Nav a:hover{
     color:var(--main-color-bleu);
     text-decoration: underline;
 }
+.ImageCarrousel{
+    width: 100%;
+}
