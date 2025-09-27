@@ -2,6 +2,11 @@
     --main-color-bleu: #005baa;
     --main-color-orange: #df6824;
 }
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 *{
     margin: 0;
     font-family: "Gill Sans", sans-serif;
@@ -46,4 +51,59 @@ Nav a{
 Nav a:hover{
     color:var(--main-color-bleu);
     text-decoration: underline;
+}
+main {
+    flex: 1;
+    padding: 20px;
+}
+footer {
+    background: var(--main-color-bleu);
+    color: white;
+    text-align: center;
+}
+.logoFooter{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-bottom: 1em;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+.logoFooter p{
+    padding-left: 1em;
+    font-size: 1.2em;
+    font-family: "Arial Black", sans-serif;
+    font-weight: bold;
+}
+.logoFooter img{
+    height: 5em;
+}
+.BarreLogo{
+    height: 5px;
+    background-color: white;
+    width: 14%;
+    margin-left: 1em;
+}
+.Réseaux{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.RéseauxImage{
+    height: 1.8em;
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-bottom: 2.5em;
+}
+.TitreInfoFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+.BarreInfo{
+    height: 5px;
+    background-color: white;
+    width: 14%;
+    margin-left: 1em;
 }
