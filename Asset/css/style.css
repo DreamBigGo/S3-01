@@ -68,9 +68,12 @@ footer {
     color: white;
     padding: 1em;
     display: flex;
+    flex-wrap: wrap;
+    flex-basis: auto;
     justify-content: center;
-    gap: 3em;
+    gap: 2em;
     margin-top: auto;
+    bottom: 100%
 }
 .Bloc1, .Bloc2, .Bloc3, .Bloc4{
     display: flex;
@@ -128,6 +131,8 @@ footer {
 .BarreInfo > a{
     text-decoration: none;
     color: white;
+
+    margin-top: 5%;
 }
 .Autre{
     margin-top: 1em;
