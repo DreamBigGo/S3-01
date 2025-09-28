@@ -1,8 +1,6 @@
 {
-  {
   "name": "dreambiggo/s3-01",
   "description": "Projet Pédagogique IUT de Paris",
-}
   "require": {
     "phpunit/phpunit": "^9"
   }
