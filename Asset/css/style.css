@@ -40,21 +40,28 @@ nav{
 }
 
 .styled {
-    border-radius: 50px;
+    border-radius: 40px;
     font-size: 25px;
     background: var(--main-color-orange);
     color: white;
     border: none;
-    padding: 20px;
+    padding: 15px 25px;
+    box-shadow: #d15200 0 7px;
+    cursor: pointer;
 }
 .styled:hover {
     text-decoration: none;
-    box-shadow: 0 0 7px 2px var(--main-color-bleu);
+    box-shadow: #d15200 0 5px;
+    transform: translateY(2px);
+}
+.styled:active {
+    box-shadow: #d15200 0 2px;
+    transform: translateY(3px);
 }
 
 main {
     flex: 1;
-    padding: 20px;
+    padding: 50px 15% 50px 15%;
 }
 footer {
     background: var(--main-color-bleu);
