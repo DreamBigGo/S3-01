@@ -61,13 +61,12 @@ footer {
     color: white;
     padding: 1em;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 3em;
 }
-.Bloc1, .Bloc2, .Bloc3, .Bloc4, .Bloc5{
+.Bloc1, .Bloc2, .Bloc3, .Bloc4{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
 }
 .logoFooter {
     display: flex;
@@ -96,18 +95,16 @@ footer {
     width: 100%;
     margin: 0.8em 0;
 }
-
 .Réseaux {
     display: flex;
     justify-content: center;
     gap: 1em;
     margin-bottom: 1em;
 }
-
 .RéseauxImage {
     height: 1.8em;
 }
-.Contact{
+.Contact, .Autre{
     font-size: 0.8em;
     font-family: "Arial", sans-serif;
 }
@@ -131,4 +128,47 @@ footer {
 .Autre li a {
     color: white;
     text-decoration: none;
+}
+.Bloc3 p, .Bloc3 a, .Bloc4 a, .Bloc4 p{
+    font-size: 0.8em;
+    font-family: "Arial", sans-serif;
+    color: white;
+    text-decoration: none;
+}
+.Bloc4 ul{
+    list-style-position: inside;
+    padding-left: 0;
+    margin-left: 0;
+}
+.Bloc4 li{
+    text-align: left;
+}
+.Bloc5{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.Langue{
+    display: flex;
+    flex-direction: row;
+}
+.Bloc5 img{
+    margin-right: 1.5em;
+    height: 2em;
+    margin-bottom: 1em;
+}
+.Bloc5 p a {
+    display: flex;
+    border-radius: 50px;
+    font-size: 25px;
+    background: var(--main-color-orange);
+    color: white;
+    border: none;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+}
+.Bloc5 p a:hover {
+    box-shadow: 0 0 7px 2px whitesmoke;
 }
