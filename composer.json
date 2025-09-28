@@ -3,5 +3,6 @@
   "description": "Projet Pédagogique IUT de Paris",
   "require": {
     "phpunit/phpunit": "^9"
-  }
+  },
+  "license": "proprietary"
 }
