@@ -152,7 +152,3 @@ footer {
     margin-bottom: 1em;
 }
 
-.Bloc5 > .styled:hover {
-    text-decoration: none;
-    box-shadow: 0 0 7px 2px blueviolet;
-}
