@@ -59,51 +59,76 @@ main {
 footer {
     background: var(--main-color-bleu);
     color: white;
-    text-align: center;
-}
-.logoFooter{
+    padding: 1em;
     display: flex;
-    justify-content: left;
-    align-items: center;
-    padding-bottom: 1em;
-    margin-left: 1em;
-    margin-top: 1em;
+    justify-content: flex-start;
+    gap: 3em;
 }
-.logoFooter p{
-    padding-left: 1em;
+.Bloc1, .Bloc2, .Bloc3, .Bloc4, .Bloc5{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.logoFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.logoFooter img {
+    height: 5em;
+    margin-bottom: 0.3em;
+    margin-right: 0.5em;
+}
+
+.logoFooter p {
     font-size: 1.2em;
     font-family: "Arial Black", sans-serif;
     font-weight: bold;
+    text-align: center;
+    margin: 0;
 }
-.logoFooter img{
-    height: 5em;
-}
-.BarreLogo{
+
+.BarreLogo {
     height: 5px;
     background-color: white;
-    width: 14%;
-    margin-left: 1em;
+    width: 100%;
+    margin: 0.8em 0;
 }
-.Réseaux{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-.RéseauxImage{
-    height: 1.8em;
-    margin-left: 1em;
-    margin-top: 1em;
-    margin-bottom: 2.5em;
-}
-.TitreInfoFooter{
+
+.Réseaux {
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-family: Arial, sans-serif;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.RéseauxImage {
+    height: 1.8em;
+}
+.Contact{
+    font-size: 0.8em;
+    font-family: "Arial", sans-serif;
 }
 .BarreInfo{
-    height: 5px;
+    height: 2.5px;
     background-color: white;
-    width: 14%;
-    margin-left: 1em;
+    width: 180px;
+    margin: 0.8em 0;
+}
+.Autre{
+    margin-top: 1em;
+}
+.Autre ul {
+    list-style-position: inside;
+    padding-left: 0;
+    margin-left: 0;
+}
+.Autre li{
+    text-align: left;
+}
+.Autre li a {
+    color: white;
+    text-decoration: none;
 }
