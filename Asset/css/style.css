@@ -45,7 +45,7 @@ nav{
     background: var(--main-color-orange);
     color: white;
     border: none;
-    padding: 20px
+    padding: 20px;
 }
 .styled:hover {
     text-decoration: none;
