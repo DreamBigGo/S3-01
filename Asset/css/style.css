@@ -12,7 +12,7 @@ body {
     font-family: "Gill Sans", sans-serif;
 }
 h1{
-    color:yellow;
+    color: var(--main-color-bleu);
 }
 .logo{
     width:200px;
@@ -26,6 +26,7 @@ nav{
     border-bottom: var(--main-color-bleu) solid 5px;
     box-shadow: #000000 0 0 5px;
     justify-content: space-around;
+
 }
 
 .menu > a{
@@ -63,6 +64,8 @@ main {
     flex: 1;
     padding: 50px 15% 50px 15%;
 }
+
+/**********************************************************************/
 footer {
     background: var(--main-color-bleu);
     color: white;
@@ -164,3 +167,35 @@ footer {
     margin-bottom: 1em;
 }
 
+.Presentation{
+    display: flex;
+    gap: 5%;
+}
+
+.france, .international {
+    margin-top: 10%;
+    background: papayawhip;
+    border: 2px solid var(--main-color-bleu);
+    border-radius: 10px;
+    padding: 1.5em;
+
+}
+
+.france >li , .international > li {
+    margin-bottom: 5%;
+    list-style: none;
+}
+
+.international input{
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.savoir{
+    display: flex;
+    justify-content: right;
+}
