@@ -12,7 +12,7 @@ body {
     font-family: "Gill Sans", sans-serif;
 }
 h1{
-    color:yellow;
+    color: var(--main-color-bleu);
 }
 .logo{
     width:200px;
@@ -61,6 +61,8 @@ Nav a:hover{
 main {
     padding: 50px 15% 50px 15%;
 }
+
+/**********************************************************************/
 footer {
     background: var(--main-color-bleu);
     color: white;
@@ -176,4 +178,34 @@ footer {
 }
 .Bloc5 p a:hover {
     box-shadow: 0 0 7px 2px whitesmoke;
+}
+
+/**********************************************************************/
+
+.france, .international {
+    margin-top: 10%;
+    background: papayawhip;
+    border: 2px solid var(--main-color-bleu);
+    border-radius: 10px;
+    padding: 1.5em;
+
+}
+
+.france >li , .international > li {
+    margin-bottom: 5%;
+    list-style: none;
+}
+
+.international input{
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.savoir{
+    display: flex;
+    justify-content: right;
 }
