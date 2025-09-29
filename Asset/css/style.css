@@ -26,7 +26,7 @@ nav{
     border-bottom: var(--main-color-bleu) solid 5px;
     box-shadow: #000000 0 0 5px;
     justify-content: space-around;
-
+    gap: 2em;
 }
 
 .styled {
@@ -51,7 +51,6 @@ nav{
 Nav a{
     text-decoration:none;
     color:black;
-    display:flex;
     font-size: 25px;
 }
 Nav a:hover{
@@ -62,7 +61,7 @@ main {
     padding: 50px 15% 50px 15%;
 }
 
-/**********************************************************************/
+/**************************  FOOTER  *****************************************/
 footer {
     background: var(--main-color-bleu);
     color: white;
@@ -181,7 +180,10 @@ footer {
 }
 
 /**********************************************************************/
-
+.Presentation{
+    display: flex;
+    gap: 5%;
+}
 .france, .international {
     margin-top: 10%;
     background: papayawhip;
@@ -197,6 +199,7 @@ footer {
 }
 
 .international input{
+
 }
 
 .actions {
