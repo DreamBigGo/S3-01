@@ -20,17 +20,25 @@ h1{
 
 }
 nav{
-    display:flex;
-    flex-direction:row;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     border-bottom: var(--main-color-bleu) solid 5px;
     box-shadow: #000000 0 0 5px;
     justify-content: space-around;
-    gap: 2em;
+    gap: 2%;
 }
 
+.menu a{
+    text-decoration:none;
+    color:black;
+    font-size: 25px;
+}
+.menu a:hover{
+    color:var(--main-color-bleu);
+    text-decoration: underline;
+}
 .styled {
-    display: flex;
     border-radius: 40px;
     font-size: 25px;
     background: var(--main-color-orange);
@@ -41,6 +49,7 @@ nav{
     cursor: pointer;
 }
 .styled:hover {
+    text-decoration: none;
     box-shadow: #d15200 0 5px;
     transform: translateY(2px);
 }
@@ -48,27 +57,24 @@ nav{
     box-shadow: #d15200 0 2px;
     transform: translateY(3px);
 }
-Nav a{
-    text-decoration:none;
-    color:black;
-    font-size: 25px;
-}
-Nav a:hover{
-    color:var(--main-color-bleu);
-    text-decoration: underline;
-}
+
 main {
+    flex: 1;
     padding: 50px 15% 50px 15%;
 }
 
-/**************************  FOOTER  *****************************************/
+/***************************   FOOTER   ******************************************/
 footer {
     background: var(--main-color-bleu);
     color: white;
     padding: 1em;
     display: flex;
+    flex-wrap: wrap;
+    flex-basis: auto;
     justify-content: center;
-    gap: 3em;
+    gap: 2em;
+    margin-top: auto;
+    bottom: 100%
 }
 .Bloc1, .Bloc2, .Bloc3, .Bloc4{
     display: flex;
@@ -89,7 +95,6 @@ footer {
 
 .logoFooter p {
     font-size: 1.2em;
-    font-family: "Arial Black", sans-serif;
     font-weight: bold;
     text-align: center;
     margin: 0;
@@ -110,45 +115,40 @@ footer {
 .RéseauxImage {
     height: 1.8em;
 }
-.Contact, .Autre{
-    font-size: 0.8em;
-    font-family: "Arial", sans-serif;
-}
+
 .BarreInfo{
-    height: 2.5px;
+    display: flex;
+    flex-direction: column;
+    align-content: baseline;
+    align-items: flex-start;
+    height: 3px;
     background-color: white;
-    width: 180px;
-    margin: 0.8em 0;
+    width: 100%;
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.BarreInfo > a{
+    text-decoration: none;
+    color: white;
+
+    margin-top: 5%;
 }
 .Autre{
     margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    outline: none;
+    border: none;
+    box-shadow: none;
 }
-.Autre ul {
-    list-style-position: inside;
-    padding-left: 0;
-    margin-left: 0;
-}
-.Autre li{
-    text-align: left;
-}
-.Autre li a {
+.Autre > a {
     color: white;
     text-decoration: none;
 }
-.Bloc3 p, .Bloc3 a, .Bloc4 a, .Bloc4 p{
-    font-size: 0.8em;
-    font-family: "Arial", sans-serif;
-    color: white;
-    text-decoration: none;
-}
-.Bloc4 ul{
-    list-style-position: inside;
-    padding-left: 0;
-    margin-left: 0;
-}
-.Bloc4 li{
-    text-align: left;
-}
+
 .Bloc5{
     display: flex;
     justify-content: center;
@@ -164,26 +164,12 @@ footer {
     height: 2em;
     margin-bottom: 1em;
 }
-.Bloc5 p a {
-    display: flex;
-    border-radius: 50px;
-    font-size: 25px;
-    background: var(--main-color-orange);
-    color: white;
-    border: none;
-    padding: 20px;
-    color: white;
-    text-decoration: none;
-}
-.Bloc5 p a:hover {
-    box-shadow: 0 0 7px 2px whitesmoke;
-}
-
-/**********************************************************************/
+/*****************************************************/
 .Presentation{
     display: flex;
     gap: 5%;
 }
+
 .france, .international {
     margin-top: 10%;
     background: papayawhip;
@@ -199,7 +185,6 @@ footer {
 }
 
 .international input{
-
 }
 
 .actions {
