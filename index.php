@@ -35,12 +35,7 @@
             <li><p>Création de <a href="">projets de co-développement</a> impliquant de nombreux experts dans différents secteurs d’activités.
                 </p>
             </li>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
+
 
             <div class="actions">
             <a  href="index.html">
@@ -49,6 +44,7 @@
             </div>
         </ul>
     </div>
+    <h1>Les actualités d'AGIRabLcd</h1>
 
 </main>
 <?php include 'Asset/page/footer.php' ?>
