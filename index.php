@@ -30,11 +30,13 @@
             </div>
         </ul>
         <ul class="international">
-            <li><h2>L'international</h2></li>
-            <li><p>Réalisation de <a href="">missions ponctuelles</a> ou des programmes spécifiques dans un domaine précis </p></li>
-            <li><p>Création de <a href="">projets de co-développement</a> impliquant de nombreux experts dans différents secteurs d’activités.
-                </p>
-            </li>
+
+                <li><h2>L'international</h2></li>
+                <li><p>Réalisation de <a href="">missions ponctuelles</a> ou des programmes spécifiques dans un domaine précis </p></li>
+                <li><p>Création de <a href="">projets de co-développement</a> impliquant de nombreux experts dans différents secteurs d’activités.
+                    </p>
+                </li>
+
 
 
             <div class="actions">

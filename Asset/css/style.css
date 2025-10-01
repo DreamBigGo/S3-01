@@ -192,6 +192,9 @@ footer {
     padding: 1.5em;
     box-shadow: rgba(0, 0, 0, 0.7) 2px 2px 3px ;
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
 
@@ -200,13 +203,12 @@ footer {
     list-style: none;
 }
 
-.international input{
-}
 
 .actions {
     display: flex;
     justify-content: center;
     gap: 1em;
+    margin-top: 10%;
 }
 
 .savoir{
