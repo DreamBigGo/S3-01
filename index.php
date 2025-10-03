@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="Asset/css/style.css">
-    <title> AgirAbcd </title>
-</head>
-<body>
 
-
-<?php include 'Asset/page/nav.php'; ?>
+<?php require_once 'Asset/page/header.php'; ?>
 
 
 <main>
@@ -48,7 +39,7 @@
     </div>
     <h1>Les actualités d'AGIRabLcd</h1>
 
+
+
 </main>
-<?php include 'Asset/page/footer.php' ?>
-</body>
-</html>
+<?php require_once 'Asset/page/footer.php' ?>

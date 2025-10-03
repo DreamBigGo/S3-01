@@ -78,22 +78,28 @@ main {
 }
 
 /***************************   FOOTER   ******************************************/
+/***************************   FOOTER   ******************************************/
 footer {
     background: var(--main-color-bleu);
     color: white;
     padding: 1em;
     display: flex;
     flex-wrap: wrap;
-    flex-basis: auto;
     justify-content: center;
     gap: 2em;
     margin-top: auto;
-    bottom: 100%
 }
-.Bloc1, .Bloc2, .Bloc3, .Bloc4{
+footer p {
+    padding: 5px;
+    border-bottom:  3px solid #FFFF;
+}
+
+.Bloc1, .Bloc2, .Bloc3, .Bloc4, .Bloc5{
     display: flex;
     flex-direction: column;
 }
+
+/* Bloc1 : Logo et réseaux sociaux */
 .logoFooter {
     display: flex;
     flex-direction: row;
@@ -110,7 +116,6 @@ footer {
 .logoFooter p {
     font-size: 1.2em;
     font-weight: bold;
-    text-align: center;
     margin: 0;
 }
 
@@ -120,64 +125,90 @@ footer {
     width: 100%;
     margin: 0.8em 0;
 }
+
 .Réseaux {
     display: flex;
     justify-content: center;
     gap: 1em;
     margin-bottom: 1em;
 }
+
 .RéseauxImage {
     height: 1.8em;
 }
 
-.BarreInfo{
+/* Bloc2 : Contact et autres liens */
+.BarreInfoDep {
     display: flex;
     flex-direction: column;
-    align-content: baseline;
-    align-items: flex-start;
-    height: 3px;
-    background-color: white;
-    width: 100%;
-    outline: none;
-    border: none;
-    box-shadow: none;
+    gap: 0.5em;
 }
 
-.BarreInfo > a{
-    text-decoration: none;
-    color: white;
-
-    margin-top: 5%;
-}
 .Autre{
     margin-top: 1em;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    outline: none;
-    border: none;
-    box-shadow: none;
 }
-.Autre > a {
+
+.Autre .BarreInfoDep a {
     color: white;
     text-decoration: none;
 }
 
+/* Bloc3 : Délégation territoriale avec scrollbar simple */
+.Bloc3 p {
+    margin-bottom: 0.5em;
+}
+
+.Bloc3 .BarreInfo {
+    display: flex;
+    flex-direction: column;
+    max-height: 200px; /* Hauteur maximale */
+    overflow-y: auto;  /* Scroll automatique si trop long */
+    gap: 0.3em;
+}
+
+.Bloc3 .BarreInfo > a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Bloc4 : Informations utiles */
+.Bloc4 p {
+    margin-bottom: 0.5em;
+}
+
+.Bloc4 .BarreInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+.Bloc4 .BarreInfo > a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Bloc5 : Langues et bouton */
 .Bloc5{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
+
 .Langue{
     display: flex;
     flex-direction: row;
-}
-.Bloc5 img{
-    margin-right: 1.5em;
-    height: 2em;
+    gap: 1em;
     margin-bottom: 1em;
 }
+
+.Bloc5 img{
+    height: 2em;
+}
+
 /*****************************************************/
 .Presentation{
     display: flex;

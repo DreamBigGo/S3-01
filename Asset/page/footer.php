@@ -35,7 +35,7 @@
         </div>
         <div class="Autre">
             <p>Autres :</p>
-            <div class="BarreInfo">
+            <div class="BarreInfoDep">
             <a href="">Mentions légales</a>
             <a href="">Plan du site</a>
             <a href="">Administration</a>
@@ -46,8 +46,54 @@
     <div class="Bloc3">
         <p>Délégation territoriale :</p>
         <div class="BarreInfo">
-            <a href="">ALLIER</a>
-            <a href="">ALPES-MARITIMES</a>
+            <a href="#">ALLIER</a>
+            <a href="#">ALPES-MARITIMES</a>
+            <a href="#">AUDE</a>
+            <a href="#">CALVADOS</a>
+            <a href="#">BOUCHES-DU-RHÔNE</a>
+            <a href="#">CHARENTE-MARITIME</a>
+            <a href="#">CÔTE-D’OR</a>
+            <a href="#">CÔTES-D’ARMOR</a>
+            <a href="#">DORDOGNE</a>
+            <a href="#">DRÔME</a>
+            <a href="#">ESSONNE</a>
+            <a href="#">EURE-ET-LOIR</a>
+            <a href="#">SEINE-MARITIME</a>
+            <a href="#">FINISTÈRE</a>
+            <a href="#">GARD</a>
+            <a href="#">HAUTE-GARONNE</a>
+            <a href="#">HAUTES-PYRÉNÉES</a>
+            <a href="#">HÉRAULT</a>
+            <a href="#">ILLE-ET-VILAINE</a>
+            <a href="#">ISÈRE</a>
+            <a href="#">LOIRE</a>
+            <a href="#">LOT</a>
+            <a href="#">LOT-ET-GARONNE</a>
+            <a href="#">MANCHE</a>
+            <a href="#">MARNE</a>
+            <a href="#">MEURTHE-ET-MOSELLE</a>
+            <a href="#">MORBIHAN</a>
+            <a href="#">MOSELLE</a>
+            <a href="#">NIÈVRE</a>
+            <a href="#">YONNE</a>
+            <a href="#">NORD</a>
+            <a href="#">OISE</a>
+            <a href="#">PARIS</a>
+            <a href="#">PAS-DE-CALAIS</a>
+            <a href="#">PYRÉNÉES-ORIENTALES</a>
+            <a href="#">LA RÉUNION</a>
+            <a href="#">RHÔNE</a>
+            <a href="#">SAÔNE-ET-LOIRE</a>
+            <a href="#">SAVOIE</a>
+            <a href="#">HAUTE-SAVOIE</a>
+            <a href="#">SEINE-ET-MARNE</a>
+            <a href="#">SOMME</a>
+            <a href="#">VAR</a>
+            <a href="#">VAUCLUSE</a>
+            <a href="#">VOSGES</a>
+            <a href="#">YVELINES</a>
+
+
         </div>
     </div>
 
@@ -65,10 +111,10 @@
     <div class="Bloc5">
         <div class="Langue">
             <a href="">
-                <img src="/Asset/img/Anglais.png" alt="Anglais">
+                <img src="/S3-01/Asset/img/Anglais.png" alt="Anglais">
             </a>
             <a href="">
-                <img src="/Asset/img/Espagnol.png" alt="Espagnol">
+                <img src="/S3-01/Asset/img/Espagnol.png" alt="Espagnol">
             </a>
         </div>
         <a href="/index.php">
@@ -77,3 +123,5 @@
     </div>
 
 </footer>
+</body>
+</html>
