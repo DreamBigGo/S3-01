@@ -18,14 +18,20 @@ $currentPage = basename($_SERVER['PHP_SELF']);
         <img class="logo" src="/S3-01/Asset/img/Logo_de_lorganisation_AGIRabcd.png" alt="Logo Agirabcd">
     </a>
 
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">
+        <img src="/S3-01/Asset/img/MenuBurger.png" alt="Menu Burger" class="Menu-Burger">
+    </label>
+
     <!-- Liens du menu -->
-    <a href="/S3-01/index.php" class="<?= ($currentPage == 'index.php') ? 'active' : '' ?>">Accueil</a>
-    <a href="/S3-01/Asset/page/quisommenous.php" class="<?= ($currentPage == 'quisommenous.php') ? 'active' : '' ?>">Qui sommes-nous</a>
-    <a href="/S3-01/Asset/page/actionfrance.php" class="<?= ($currentPage == 'actionfrance.php') ? 'active' : '' ?>">Action France</a>
-    <a href="/S3-01/Asset/page/actionint.php" class="<?= ($currentPage == 'actionint.php') ? 'active' : '' ?>">Action International</a>
+    <div class="Lien-menu">
+        <a href="/S3-01/index.php" class="<?= ($currentPage == 'index.php') ? 'active' : '' ?>">Accueil</a>
+        <a href="/S3-01/Asset/page/quisommenous.php" class="<?= ($currentPage == 'quisommenous.php') ? 'active' : '' ?>">Qui sommes-nous</a>
+        <a href="/S3-01/Asset/page/actionfrance.php" class="<?= ($currentPage == 'actionfrance.php') ? 'active' : '' ?>">Action France</a>
+        <a href="/S3-01/Asset/page/actionint.php" class="<?= ($currentPage == 'actionint.php') ? 'active' : '' ?>">Action International</a>
+    </div>
 
-
-<!-- Boutons -->
+    <!-- Boutons -->
     <a class="btn" href="/S3-01/Asset/page/soliciter.php"><input class="styled" type="button" value="Soliciter AGIRabcd" /></a>
-    <a class="btn" href="/S3-01/Asset/page/soutenir.php"><input class="styled" type="button" value="Soutenir AGIRabcd" /></a>
+    <a class="btn-soutenir" href="/S3-01/Asset/page/soutenir.php"><input class="styled" type="button" value="Soutenir AGIRabcd" /></a>
 </nav>
