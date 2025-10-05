@@ -39,8 +39,8 @@ nav{
 .Menu-Burger, .nav-toggle{
     display: none;
     position: absolute;
-    top: 55px;
-    right: 50px;
+    top: 7%;
+    right: 4%;
     width: 50px;
 }
 .menu a {
