@@ -286,7 +286,7 @@ main input{
         flex-direction: column;
         width: 100%;
         height: 150px;
-        margin-top: 300px;
+        margin-top: 290px;
         background-color: white;
         box-shadow: #000000 0 0 5px;
     }
@@ -298,5 +298,13 @@ main input{
 @media screen and (max-width: 980px) {
     .btn input{
         display: none;
+    }
+    .btn-soutenir{
+        position: absolute;
+        left: 45%;
+    }
+    .logo{
+        position: absolute;
+        left: 5%;
     }
 }
