@@ -28,4 +28,5 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 <!-- Boutons -->
     <a class="btn" href="/S3-01/Asset/page/soliciter.php"><input class="styled" type="button" value="Soliciter AGIRabcd" /></a>
     <a class="btn" href="/S3-01/Asset/page/soutenir.php"><input class="styled" type="button" value="Soutenir AGIRabcd" /></a>
+
 </nav>
