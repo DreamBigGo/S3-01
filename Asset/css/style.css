@@ -257,6 +257,7 @@ main input{
     display: none;
     height: 5em;
     width: 5em;
+    user-select: none;
 }
 .nav-cache{
     display: none;
