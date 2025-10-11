@@ -30,7 +30,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <label for="nav-toggle" class="nav-toggle-label">
-        <img src="/S3-01/Asset/img/MenuBurger.png" alt="Menu Burger" class="Menu-Burger">
+        <img src="/S3-01/Asset/img/MenuBurger.png" alt="Menu Burger" class="Menu-Burger-Icon">
     </label>
 </nav>
 
@@ -39,4 +39,9 @@ $currentPage = basename($_SERVER['PHP_SELF']);
     <a href="/S3-01/Asset/page/quisommenous.php" class="<?= ($currentPage == 'quisommenous.php') ? 'active' : '' ?>">Qui sommes-nous</a>
     <a href="/S3-01/Asset/page/actionfrance.php" class="<?= ($currentPage == 'actionfrance.php') ? 'active' : '' ?>">Action France</a>
     <a href="/S3-01/Asset/page/actionint.php" class="<?= ($currentPage == 'actionint.php') ? 'active' : '' ?>">Action International</a>
+
+    <div class="separateur"></div>
+
+    <a class="btn" href="/S3-01/Asset/page/soliciter.php"><input class="styled" type="button" value="Soliciter AGIRabcd" /></a>
+    <a class="btn" href="/S3-01/Asset/page/soutenir.php"><input class="styled" type="button" value="Soutenir AGIRabcd" /></a>
 </nav>
