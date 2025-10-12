@@ -1,7 +1,104 @@
 <?php require_once 'header.php'; ?>
 
-    <main>
+<script src="/S3-01/Asset/js/formulaire.js" defer></script>
+<nav class="formulaire">
+    <div class="Identité">
+        <h1 class="titre-id">Identité</h1>
+    </div>
+    <div class="Adresse">
+        <h1 class="titre-adresse">Adresse</h1>
+    </div>
+    <div class="contact-raison">
+        <h1 class="titre-contact">Contact et Message</h1>
+    </div>
+</nav>
+<main class="main-form">
+    <section>
+        <form action="" method="post" class="form-id">
+            <h2>Identité</h2>
+            <input type="text" name="nom" id="nom" required placeholder="Nom">
 
-    </main>
+            <input type="text" name="prenom" id="prenom" required placeholder="Prenom">
+
+            <input type="text" name="societe" id="societe" required placeholder="Société">
+
+            <button type="button" id="etape-id">Étape suivante</button>
+        </form>
+        <form action="" method="post" class="form-adresse">
+            <h2>Adresse</h2>
+            <input type="text" name="adresse" id="adresse" required placeholder="Adresse">
+
+            <input type="text" name="cp" id="cp" required placeholder="Code Postal">
+
+            <input type="text" name="ville" id="ville" required placeholder="Ville">
+
+            <button type="button" id="etape-adresse">Étape suivante</button>
+            <button type="button" id="retour1">Retour</button>
+        </form>
+        <form action="" method="post" class="form-contact-message">
+            <h2>Contact et Message</h2>
+            <input type="text" name="telephone" id="telephone" required placeholder="Téléphone">
+
+            <input type="email" name="email" id="email" required placeholder="email@exemple.com">
+
+            <select id="objet" name="objet" required>
+                <option>Contacter AGIRabcd</option>
+                <option>Message pour A1 - Alsace</option>
+                <option>Message pour B1 - Dordogne</option>
+                <option>Message pour B2 - Aquitaine/Gironde</option>
+                <option>Message pour B3 - Aquitaine/Sud</option>
+                <option>Message pour B4 - Lot et Garonne</option>
+                <option>Message pour B5 - Pau/Bearn</option>
+                <option>Message pour C2 - Bourbonnais</option>
+                <option>Message pour D2 - Côte d'Or</option>
+                <option>Message pour D3 - Saône et Loire</option>
+                <option>Message pour E1 - Côtes d'Armor</option>
+                <option>Message pour E2 - Finistère</option>
+                <option>Message pour E3 - Ille et Vilaine</option>
+                <option>Message pour E4 - Morbihan</option>
+                <option>Message pour E5 - Saint Mlao</option>
+                <option>Message pour F2 - Eure et Loire</option>
+                <option>Message pour F3 - Orleanais</option>
+                <option>Message pour F4 - Touraine</option>
+                <option>Message pour J1 - Hérault</option>
+                <option>Message pour J2 - Pyrénées Orientales</option>
+                <option>Message pour J3 - Gard</option>
+                <option>Message pour J4 - Aude</option>
+                <option>Message pour L2 - Moselle</option>
+                <option>Message pour M1 - Haute Garonne</option>
+                <option>Message pour M2 - Lot</option>
+                <option>Message pour M3 - Hautes Pyrénées</option>
+                <option>Message pour N1 - Nord</option>
+                <option>Message pour N2 - Pas de Calais</option>
+                <option>Message pour O1 - Basse Normandie</option>
+                <option>Message pour O2 - Eure/Seine Maritime</option>
+                <option>Message pour Q1 - Paris/Petite couronne</option>
+                <option>Message pour Q3 - Seine et Marne</option>
+                <option>Message pour Q4 - Norseinoise</option>
+                <option>Message pour Q5 - Yveline</option>
+                <option>Message pour R1 - Anjou/Maine</option>
+                <option>Message pour R2 - Loire/Océan</option>
+                <option>Message pour S1 - Somme</option>
+                <option>Message pour S2 - Oise</option>
+                <option>Message pour T1 - Charente/Maritime</option>
+                <option>Message pour U1 - Alpes Maritimes</option>
+                <option>Message pour U3 - Var</option>
+                <option>Message pour U4 - Vaucluse</option>
+                <option>Message pour V3 - Isère</option>
+                <option>Message pour V4 - Loire</option>
+                <option>Message pour V5 - Rhône</option>
+                <option>Message pour V6 - Savoie/Haute Savoie</option>
+                <option>Message pour V7 - Drôme/Ardèche</option>
+                <option>Message pour Île de la Réunion</option>
+                <option>Autre ...</option>
+            </select>
+
+            <textarea id="message" name="message" required placeholder="Message ..."></textarea>
+
+            <button type="submit">Envoyer</button>
+            <button type="button" id="retour2">Retour</button>
+        </form>
+    </section>
+</main>
 
 <?php require_once 'footer.php' ?>

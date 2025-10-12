@@ -347,3 +347,115 @@ main input{
         flex-direction: column;
     }
 }
+
+
+/**************************** FORMULAIRE DE CONTACT *******************************/
+
+.formulaire{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+.formulaire div{
+    width: 15%;
+}
+.formulaire div h1{
+    color: black;
+    font-size: 25px;
+}
+.formulaire div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.Identité{
+    border-bottom: 5px solid var(--main-color-bleu);
+}
+.Adresse{
+    border-bottom: none;
+}
+.contact-raison{
+    border-bottom: none;
+}
+.main-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.main-form section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: white;
+}
+.main-form section form {
+    max-width: 400px;
+    margin: 40px auto;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(11, 102, 178, 0.08);
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.main-form section form h2 {
+    margin-top: 0;
+    color: #08589a;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.main-form section form input[type="text"], .main-form section form input[type="email"],
+.main-form section form #message, .main-form section form #objet{
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid #e6e9ef;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background-color: #ffffff;
+}
+
+.main-form section form input[type="text"]:focus, .main-form section form input[type="email"]:focus,
+.main-form section form #message:focus, .main-form section form #objet:focus{
+    border-color: #0b66b2;
+    box-shadow: 0 0 6px rgba(11, 102, 178, 0.25);
+}
+.main-form section form #message{
+    min-height:120px; resize:vertical
+}
+.main-form section form button {
+    background: #0b66b2;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 14px;
+    cursor: pointer;
+    transition: background-color 0.25s, transform 0.1s;
+    margin-top: 8px;
+}
+
+.main-form section form button:hover {
+    background-color: #08589a;
+}
+
+.main-form section form button:active {
+    transform: scale(0.98);
+}
+
+.main-form section form input::placeholder {
+    color: #6b7280;
+    opacity: 0.8;
+}
