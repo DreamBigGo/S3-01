@@ -387,17 +387,18 @@ main input{
     align-items: center;
 }
 .main-form aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 50%;
     height: 75vh;
     background: rgba(0, 0, 255, 0.1);
     padding:18px;
     border-radius:10px
 }
-.main-form aside h1, .main-form aside ul, .main-form aside .separation-form, .main-form aside .conseille{
-    margin-left: 10px;
-}
 .main-form aside h1{
-    margin-left: 4em;
+    margin-left: 32%;
     margin-bottom: 0.9em;
     font-weight: bold;
     font-size: 40px;
