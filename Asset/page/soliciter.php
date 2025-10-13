@@ -99,6 +99,16 @@
             <button type="button" id="retour2">Retour</button>
         </form>
     </section>
+    <aside>
+        <h1>AGIRabcd</h1>
+        <ul>
+            <li><p class="titre-aside">Siège : </p><p class="text-aside">18-26 rue Goubet, 75019 Paris</p></li>
+            <li><p class="titre-aside">Email :  </p><p class="text-aside">agirabcd@agirabcd.org</p></li>
+            <li><p class="titre-aside">Téléphone : </p><p class="text-aside">01 47 70 18 90</p></li>
+        </ul>
+        <div class="separation-form"></div>
+        <p class="conseille">* Nous vous invitons à vérifier la validité de chaque information transmise afin d’en garantir un traitement optimal.</p>
+    </aside>
 </main>
 
 <?php require_once 'footer.php' ?>

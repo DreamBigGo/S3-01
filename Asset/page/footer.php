@@ -118,7 +118,7 @@
             </a>
         </div>
         <a href="/index.php">
-            <input class="styled" type="button" value="Solicité AGIRabcd" />
+            <input class="styled" type="button" value="Contacté AGIRabcd" />
         </a>
     </div>
 

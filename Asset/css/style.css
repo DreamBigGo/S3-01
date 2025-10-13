@@ -386,6 +386,40 @@ main input{
     justify-content: center;
     align-items: center;
 }
+.main-form aside{
+    width: 50%;
+    height: 75vh;
+    background: rgba(0, 0, 255, 0.1);
+    padding:18px;
+    border-radius:10px
+}
+.main-form aside h1, .main-form aside ul, .main-form aside .separation-form, .main-form aside .conseille{
+    margin-left: 10px;
+}
+.main-form aside h1{
+    margin-left: 4em;
+    margin-bottom: 0.9em;
+    font-weight: bold;
+    font-size: 40px;
+}
+.main-form aside ul li .titre-aside{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+.main-form aside ul li .text-aside{
+    margin-bottom: 0.5em;
+}
+.main-form aside .separation-form{
+    background-color: black;
+    margin-top: 1.5em;
+    width: 95%;
+    height: 2px;
+}
+.main-form aside .conseille{
+    margin-top: 2em;
+}
 .main-form section{
     display: flex;
     flex-direction: column;
@@ -396,7 +430,7 @@ main input{
 }
 .main-form section form {
     max-width: 400px;
-    margin: 40px auto;
+    margin: 10% auto;
     background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 6px 20px rgba(11, 102, 178, 0.08);
