@@ -48,7 +48,7 @@
                 <option>Message pour B2 - Aquitaine/Gironde</option>
                 <option>Message pour B3 - Aquitaine/Sud</option>
                 <option>Message pour B4 - Lot et Garonne</option>
-                <option>Message pour B5 - Pau/Bearn</option>
+                <option>Message pour B5 - Pau/Béarn</option>
                 <option>Message pour C2 - Bourbonnais</option>
                 <option>Message pour D2 - Côte d'Or</option>
                 <option>Message pour D3 - Saône et Loire</option>
@@ -56,9 +56,9 @@
                 <option>Message pour E2 - Finistère</option>
                 <option>Message pour E3 - Ille et Vilaine</option>
                 <option>Message pour E4 - Morbihan</option>
-                <option>Message pour E5 - Saint Mlao</option>
+                <option>Message pour E5 - Saint Malo</option>
                 <option>Message pour F2 - Eure et Loire</option>
-                <option>Message pour F3 - Orleanais</option>
+                <option>Message pour F3 - Orléanais</option>
                 <option>Message pour F4 - Touraine</option>
                 <option>Message pour J1 - Hérault</option>
                 <option>Message pour J2 - Pyrénées Orientales</option>
