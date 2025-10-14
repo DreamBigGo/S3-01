@@ -38,7 +38,7 @@ div_contact.style.borderBottom = 'none';
 
 btn_id.addEventListener('click', () => {
     form_id.style.display = 'none';
-    form_adresse.style.setProperty('display', 'flex', 'important');
+    form_adresse.style.setProperty('display', 'flex', 'important'); //Affiche le formulaire suivant
     div_id.style.borderBottom = 'none';
     div_adresse.style.borderBottom = '5px solid var(--main-color-bleu)';
 });

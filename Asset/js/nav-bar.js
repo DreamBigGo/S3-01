@@ -44,7 +44,7 @@ menuburger.addEventListener('change', () => {
         navcache.style.display = 'flex';
         menuburgericon.src = '/S3-01/Asset/img/croix.png';
         menuburgericon.style.marginTop = '0.9em';
-        menuburgericon.style.height = '50px';
+        menuburgericon.style.height = '100px';
         menuburgericon.style.width = '50px';
     } else {
         navcache.style.display = 'none';

@@ -22,7 +22,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
     <a href="/S3-01/Asset/page/quisommenous.php" class="<?= ($currentPage == 'quisommenous.php') ? 'active' : '' ?>">Qui sommes-nous</a>
     <a href="/S3-01/Asset/page/actionfrance.php" class="<?= ($currentPage == 'actionfrance.php') ? 'active' : '' ?>">Action France</a>
     <a href="/S3-01/Asset/page/actionint.php" class="<?= ($currentPage == 'actionint.php') ? 'active' : '' ?>">Action International</a>
-
+    <a href="/S3-01/Asset/page/NousRejoindre.php" class="<?= ($currentPage == 'NousRejoindre.php') ? 'active' : '' ?>">Nous rejoindre</a>
 
     <!-- Boutons -->
     <a class="btn" href="/S3-01/Asset/page/soliciter.php"><input class="styled" type="button" value="Contacté AGIRabcd" /></a>
@@ -39,6 +39,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
     <a href="/S3-01/Asset/page/quisommenous.php" class="<?= ($currentPage == 'quisommenous.php') ? 'active' : '' ?>">Qui sommes-nous</a>
     <a href="/S3-01/Asset/page/actionfrance.php" class="<?= ($currentPage == 'actionfrance.php') ? 'active' : '' ?>">Action France</a>
     <a href="/S3-01/Asset/page/actionint.php" class="<?= ($currentPage == 'actionint.php') ? 'active' : '' ?>">Action International</a>
+    <a href="/S3-01/Asset/page/NousRejoindre.php" class="<?= ($currentPage == 'NousRejoindre.php') ? 'active' : '' ?>">Nous rejoindre</a>
 
     <div class="separateur"></div>
 
