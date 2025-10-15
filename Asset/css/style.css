@@ -274,14 +274,14 @@ main input{
         display: none;
         position: absolute;
         top: 155px;
-        right: 50px;
+        right: 5px;
+        z-index: 4;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 350px;
         height: 430px;
-        background: rgb(0, 0, 0, 0.1);
-        backdrop-filter: blur(5px);
+        background: #ffffff;
     }
     .nav-cache a{
         text-decoration: none;
@@ -317,13 +317,6 @@ main input{
     }
     .menu a{
         display: none
-    }
-}
-
-@media  screen and (max-width: 630px) {
-    .nav-cache{
-        left: 50px;
-        width: unset;
     }
 }
 
