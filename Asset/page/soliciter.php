@@ -22,7 +22,7 @@
 
             <input type="text" name="societe" id="societe" required placeholder="Société">
 
-            <button type="button" id="etape-id">Étape suivante</button>
+            <button type="submit" id="etape-id">Étape suivante</button>
         </form>
         <form action="" method="post" class="form-adresse">
             <h2>Adresse</h2>
@@ -32,7 +32,7 @@
 
             <input type="text" name="ville" id="ville" required placeholder="Ville">
 
-            <button type="button" id="etape-adresse">Étape suivante</button>
+            <button type="submit" id="etape-adresse">Étape suivante</button>
             <button type="button" id="retour1">Retour</button>
         </form>
         <form action="" method="post" class="form-contact-message">

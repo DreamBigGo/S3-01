@@ -398,7 +398,7 @@ main input{
     border-radius:10px
 }
 .main-form aside h1{
-    margin-left: 32%;
+    margin-left: unset;
     margin-bottom: 0.9em;
     font-weight: bold;
     font-size: 40px;
@@ -493,4 +493,21 @@ main input{
 .main-form section form input::placeholder {
     color: #6b7280;
     opacity: 0.8;
+}
+
+/**************************** RESPONSIVITÉ DU FORMULAIRE DE CONTACT *******************************/
+
+@media screen and (max-width: 800px){
+    .main-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-form aside{
+        width: 90%;
+    }
+    .main-form section form{
+        margin: 0 0 3em 0;
+    }
 }
