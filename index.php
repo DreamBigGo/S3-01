@@ -1,5 +1,7 @@
 
-<?php require_once 'Asset/page/header.php'; ?>
+<?php
+$titre="Agirabcd";
+require_once 'Asset/page/header.php'; ?>
 
 
 <main>
@@ -15,7 +17,7 @@
             <li><p>La <a href="">mobilité territoriale</a> conduite d’un véhicule personnel ou usage des transports en commun </p></li>
             <li><p>La <a href="">santé </a>et l'accès aux services de santé, la sortie de l'isolement social des personnes âgées. </p></li>
             <div class="actions">
-            <a  href="index.html">
+            <a  href="index.php">
                 <input class="styled" type="button" value="Nos actions en france" />
             </a>
             </div>
@@ -31,7 +33,7 @@
 
 
             <div class="actions">
-            <a  href="index.html">
+            <a  href="index.php">
                 <input class="styled" type="button" value="Nos actions à l'international" />
             </a>
             </div>

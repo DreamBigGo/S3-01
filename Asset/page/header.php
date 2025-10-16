@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/S3-01/Asset/css/style.css">
-    <title> AgirAbcd </title>
+    <title> <?php echo($titre) ?> </title>
     <script src="/S3-01/Asset/js/nav-bar.js" defer></script>
 </head>
 <body>

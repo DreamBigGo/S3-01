@@ -1,4 +1,6 @@
-<?php require_once 'header.php'; ?>
+<?php
+$titre="Qui sommes-nous ?";
+require_once 'header.php'; ?>
 
     <main>
 

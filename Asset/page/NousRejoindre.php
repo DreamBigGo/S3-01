@@ -1,4 +1,6 @@
-<?php require_once 'header.php'; ?>
+<?php
+$titre="Nous rejoindre";
+require_once 'header.php'; ?>
 
  <main>
     <h1>Devenir Bénévole</h1>
@@ -17,7 +19,7 @@
 
              <li><h4>Pour développer l'activité de votre choix, contactez votre délégation ou notre siège parisien</h4></li>
              <div class="actions">
-                 <a href="soliciter.php" class="btn">
+                 <a href="Noustrouver.php" class="btn">
                      <input class="styled" type="button" value="Nous rejoindre" >
                  </a>
              </div>

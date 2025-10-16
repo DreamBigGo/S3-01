@@ -1,4 +1,6 @@
-<?php require_once 'header.php'; ?>
+<?php
+$titre="Contact";
+require_once 'header.php'; ?>
 
 <script src="/S3-01/Asset/js/formulaire.js" defer></script>
 <nav class="formulaire">

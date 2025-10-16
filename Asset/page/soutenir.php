@@ -1,4 +1,6 @@
-<?php require_once 'header.php'; ?>
+<?php
+$titre="Nous soutenir";
+require_once 'header.php'; ?>
 
 <main>
 
