@@ -1,3 +1,8 @@
+<footer class="PlacementCarrousel">
+    <div class="carrousel-container">
+        <div class="carrousel-track" id="carousel"></div>
+    </div>
+</footer>
 
 <footer>
 
@@ -124,4 +129,6 @@
 
 </footer>
 </body>
+
+<script src="/S3-01/Asset/js/carrousel.js"></script>
 </html>

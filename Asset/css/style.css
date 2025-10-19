@@ -504,3 +504,44 @@ main input{
         margin: 0 0 3em 0;
     }
 }
+
+/**************************** CARROUSEL *******************************/
+
+.PlacementCarrousel {
+    margin: 0;
+    font-family: sans-serif;
+    background: #f0f0f0;
+}
+
+.carrousel-container {
+    overflow: hidden;
+    width: 100%;
+    background: #fff;
+    padding: 30px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.carrousel-track {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    animation: scroll 60s linear infinite; /* plus lent */
+}
+
+.carrousel-track img {
+    width: 120px;
+    margin: 0 30px;
+    opacity: 0.8;
+    transition: transform 0.3s, opacity 0.3s;
+    border-radius: 8px;
+}
+
+.carrousel-track img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-30%); }
+}

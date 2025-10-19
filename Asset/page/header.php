@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/S3-01/Asset/css/style.css">
     <title> AgirAbcd </title>
-    <script src="/S3-01/Asset/js/nav-bar.js" defer></script>
 </head>
 <body>
 
@@ -45,3 +44,5 @@ $currentPage = basename($_SERVER['PHP_SELF']);
     <a class="btn" href="/S3-01/Asset/page/soliciter.php"><input class="styled" type="button" value="Contacté AGIRabcd" /></a>
     <a class="btn" href="/S3-01/Asset/page/soutenir.php"><input class="styled" type="button" value="Soutenir AGIRabcd" /></a>
 </nav>
+
+<script src="/S3-01/Asset/js/nav-bar.js"></script>

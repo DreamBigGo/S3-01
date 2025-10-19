@@ -1,6 +1,5 @@
 <?php require_once 'header.php'; ?>
 
-<script src="/S3-01/Asset/js/formulaire.js" defer></script>
 <nav class="formulaire">
     <div class="Identité">
         <h1 class="titre-id">Identité</h1>
@@ -110,5 +109,7 @@
         <p class="conseille">* Nous vous invitons à vérifier la validité de chaque information transmise afin d’en garantir un traitement optimal.</p>
     </aside>
 </main>
+
+<script src="src=/S3-01/Asset/js/formulaire.js"></script>
 
 <?php require_once 'footer.php' ?>
