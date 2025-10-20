@@ -1,5 +1,6 @@
 <?php require_once 'header.php'; ?>
 
+
 <nav class="formulaire">
     <div class="Identité">
         <h1 class="titre-id">Identité</h1>
@@ -110,6 +111,6 @@
     </aside>
 </main>
 
-<script src="src=/S3-01/Asset/js/formulaire.js"></script>
+<script src="/S3-01/Asset/js/formulaire.js"></script>
 
 <?php require_once 'footer.php' ?>

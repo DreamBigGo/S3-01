@@ -490,7 +490,7 @@ main input{
 
 /**************************** RESPONSIVITÉ DU FORMULAIRE DE CONTACT *******************************/
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1040px){
     .main-form{
         display: flex;
         flex-direction: column;
@@ -506,42 +506,34 @@ main input{
 }
 
 /**************************** CARROUSEL *******************************/
-
 .PlacementCarrousel {
-    margin: 0;
-    font-family: sans-serif;
-    background: #f0f0f0;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
-
-.carrousel-container {
+.carrousel {
     overflow: hidden;
     width: 100%;
-    background: #fff;
-    padding: 30px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    background: white;
+    margin: auto;
 }
 
-.carrousel-track {
+.carrousel-img {
     display: flex;
-    align-items: center;
-    width: max-content;
-    animation: scroll 60s linear infinite; /* plus lent */
+    transition: transform 0.3s linear;
+    gap: 20px;
 }
 
-.carrousel-track img {
-    width: 120px;
-    margin: 0 30px;
-    opacity: 0.8;
-    transition: transform 0.3s, opacity 0.3s;
-    border-radius: 8px;
+.carrousel-img a img {
+    height: 110px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.2s;
 }
 
-.carrousel-track img:hover {
+.carrousel-img a img:hover {
     transform: scale(1.1);
-    opacity: 1;
-}
-
-@keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-30%); }
 }
