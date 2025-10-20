@@ -49,7 +49,6 @@ const images = [
 
 const carousel = document.querySelector('.carrousel-track');
 
-// Ajouter toutes les images deux fois pour boucle fluide
 images.concat(images).forEach(src => {
     const img = document.createElement('img');
     img.src = src;
