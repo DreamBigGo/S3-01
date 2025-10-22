@@ -537,3 +537,16 @@ main input{
 .carrousel-img a img:hover {
     transform: scale(1.1);
 }
+/**************file d'ariane **************/
+.breadcrumb{
+    display: flex;
+    justify-content: left;
+    height: auto;
+    margin: 20px;
+    box-shadow: none ;
+    color: var(--main-color-bleu);
+}
+.breadcrumb a{
+    text-decoration: none;
+    color: var(--main-color-bleu);
+}

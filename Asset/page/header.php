@@ -46,3 +46,6 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 </nav>
 
 <script src="/S3-01/Asset/js/nav-bar.js"></script>
+
+<nav id="breadcrumb" class="breadcrumb"> Accueil </nav>
+<script src="/S3-01/Asset/js/breadcrumb.js"></script>
