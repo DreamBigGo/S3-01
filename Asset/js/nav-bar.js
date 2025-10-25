@@ -12,7 +12,7 @@ const navcache = document.querySelector('.nav-cache');
 * Je définis une fonction qui va vérifier la taille de l’écran
 */
 
-function checkScreenSize() {
+function verifTailleEcran() {
     // Je définis largeurEcran qui prend comme valeur la largeur de l’écran
     const largeurEcran = window.innerWidth;
     // Condition qui vérifie si l’écran est supérieur ou égal à 1300 px
@@ -27,10 +27,10 @@ function checkScreenSize() {
 }
 
 // Définition d’un événement pour vérifier la taille de l’écran
-window.addEventListener('resize', checkScreenSize);
+window.addEventListener('resize', verifTailleEcran);
 
 // Appel de la fonction pour qu’elle vérifie la taille de l’écran au lancement du script
-checkScreenSize();
+verifTailleEcran();
 
 /*
 * Je définis différents événements, afin d’afficher les éléments adéquats au clic sur l’un des deux boutons :

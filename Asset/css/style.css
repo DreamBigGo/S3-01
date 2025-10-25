@@ -346,32 +346,45 @@ main input{
 
 .formulaire{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 100px;
+    box-shadow: none;
+    gap: 0;
 }
-.formulaire div{
-    width: 15%;
-}
-.formulaire div h1{
-    color: black;
-    font-size: 25px;
-}
-.formulaire div{
+.formulaire .etape1, .formulaire .etape2, .formulaire .etape3, .formulaire .etape4{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    border: var(--main-color-bleu) solid 5px;
+    height: 4em;
+    width: 4em;
+    border-radius: 100%;
 }
-.Identité{
-    border-bottom: 5px solid var(--main-color-bleu);
+.formulaire .separateur1, .formulaire .separateur2, .formulaire .separateur3{
+    height: 5px;
+    width: 25%;
+    border: var(--main-color-bleu) solid 1px;
 }
-.Adresse{
-    border-bottom: none;
+.formulaire .numero1, .formulaire .numero2, .formulaire .numero3, .formulaire .numero4{
+    color: var(--main-color-bleu);
+    font-size: 3em;
 }
-.contact-raison{
-    border-bottom: none;
+.recapitulatif{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.recapitulatif .titre-recap{
+    font-size: 1.1em;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+.recapitulatif .sepaRecap{
+    width: 98%;
+    height: 1px;
+    background-color: black;
 }
 .main-form{
     display: flex;

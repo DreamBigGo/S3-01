@@ -2,14 +2,20 @@
 
 
 <nav class="formulaire">
-    <div class="Identité">
-        <h1 class="titre-id">Identité</h1>
+    <div class="etape1">
+        <h1 class="numero1">1</h1>
     </div>
-    <div class="Adresse">
-        <h1 class="titre-adresse">Adresse</h1>
+    <div class="separateur1"></div>
+    <div class="etape2">
+        <h1 class="numero2">2</h1>
     </div>
-    <div class="contact-raison">
-        <h1 class="titre-contact">Contact et Message</h1>
+    <div class="separateur2"></div>
+    <div class="etape3">
+        <h1 class="numero3">3</h1>
+    </div>
+    <div class="separateur3"></div>
+    <div class="etape4">
+        <h1 class="numero4">4</h1>
     </div>
 </nav>
 <main class="main-form">
@@ -95,8 +101,31 @@
 
             <textarea id="message" name="message" required placeholder="Message ..."></textarea>
 
-            <button type="submit">Envoyer</button>
+            <button type="submit" id="etape-contact">Étape suivante</button>
             <button type="button" id="retour2">Retour</button>
+        </form>
+        <form action="" method="post" class="recapitulatif">
+            <h2>Récapitulatif</h2>
+            <ul>
+                <li><p class="titre-recap">Nom : </p><p class="saisie-nom"></p></li>
+                <li><p class="titre-recap">Prenom : </p><p class="saisie-prenom"></p></li>
+                <li><p class="titre-recap">Société : </p><p class="saisie-societe"></p></li>
+            </ul>
+            <div class="sepaRecap"></div>
+            <ul>
+                <li><p class="titre-recap">Adresse : </p><p class="saisie-adresse"></p></li>
+                <li><p class="titre-recap">Code Postal : </p><p class="saisie-cp"></p></li>
+                <li><p class="titre-recap">Ville : </p><p class="saisie-ville"></p></li>
+            </ul>
+            <div class="sepaRecap"></div>
+            <ul>
+                <li><p class="titre-recap">Téléphone : </p><p class="saisie-telephone"></p></li>
+                <li><p class="titre-recap">Adresse Email : </p><p class="saisie-email"></p></li>
+                <li><p class="titre-recap">Objet : </p><p class="saisie-objet"></p></li>
+                <li><p class="titre-recap">Message : </p><p class="saisie-message"></p></li>
+            </ul>
+            <button type="submit" id="recap">Envoyer</button>
+            <button type="button" id="retour3">Retour</button>
         </form>
     </section>
     <aside>
