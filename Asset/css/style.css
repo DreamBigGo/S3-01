@@ -436,8 +436,7 @@ main input{
     background-color: white;
 }
 .main-form section form {
-    max-width: 400px;
-    margin: 10% auto;
+    max-width: 485px;
     background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 6px 20px rgba(11, 102, 178, 0.08);
