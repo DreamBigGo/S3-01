@@ -39,7 +39,7 @@
     </div>
     <h1>Les actualités d'AGIRabcd</h1>
 
-    <section class="Presentation">
+    <section class="actualitéAgir">
         <div class="actu">
             <h2>Nouvelle lettre d'information trimestrielle d'Agirabcd</h2>
             <ul>
@@ -51,12 +51,22 @@
             </ul>
         </div>
         <div class="actu">
-
+            <h2>Le savoir-faire de la cuisine française en Ouganda</h2>
+            <img src="Asset/img/actuOuganda.png" class="imgActu">
+            <p>François, adhérent de la délégation territoriale Meurthe-et-Moselle, s’est rendu en Ouganda pour réaliser une mission de renforcement de la qualité en cuisine.</p>
+            <a href="#">En savoir plus</a>
         </div>
         <div class="actu">
-
+            <h2>Une action solidaire avec Madagascar </h2>
+            <img src="Asset/img/actuMadagascar.png" class="imgActu">
+            <h3>Agir pour des ruches solidaires à Madagascar</h3>
+            <p>Parrainez vos ruches malgaches pour améliorer les revenus des paysan.ne.s et contribuer à la biodiversité locale</p>
+            <h2 class="SommeRec">1059€ collecté</h2>
+            <a  href="#">
+                <input class="styled" type="button" value="Contribué"/>
+            </a>
         </div>
     </section>
-
+    <h1>Nos Partenaires :</h1>
 </main>
 <?php require_once 'Asset/page/footer.php' ?>
