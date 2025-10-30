@@ -39,7 +39,24 @@
     </div>
     <h1>Les actualités d'AGIRabcd</h1>
 
+    <section class="Presentation">
+        <div class="actu">
+            <h2>Nouvelle lettre d'information trimestrielle d'Agirabcd</h2>
+            <ul>
+                <li><p>Agirabcd a le plaisir de vous annoncer le lancement de sa nouvelle lettre d'information trimestrielle !</p></li>
+                <li><p>Objectif ? Vous tenir informé(e) de nos actualités, projets, actions en France et à l'international, témoignages de bénévoles, et bien plus encore...</p></li>
+                <li><p><a href="#">Cliquez ici</a> pour lire notre première lettre d'information</p></li>
+                <li><p>Vous souhaitez recevoir les prochaines éditions directement par courriel ?</p><a href="#">Inscrivez-vous ici</a></li>
+                <li><p>Merci pour votre intérêt et votre engagement à nos côtés !</p></li>
+            </ul>
+        </div>
+        <div class="actu">
 
+        </div>
+        <div class="actu">
+
+        </div>
+    </section>
 
 </main>
 <?php require_once 'Asset/page/footer.php' ?>
