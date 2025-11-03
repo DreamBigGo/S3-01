@@ -9,8 +9,7 @@ require_once "header.php"?>
         Dans chaque délégation territoriale, vous avez la possibilité de vous engager à l'échelle nationale et internationale, en fonction de vos attentes et de vos appétences.</p>
 
     <div class="">
-        <map> </map>
-        <img id="carte_france" src="/S3-01/Asset/img/France/France.png" alt="carte de france">
+        <embed type="image/svg" data="Asset/img/France/France.svg">
     <img id="carte_" src="/S3-01/Asset/img/France/ile_de_france.png" alt="carte île de france">
     </div>
 
