@@ -1,0 +1,70 @@
+const carte_france = document.getElementById("carte");
+let pathing = carte_france.querySelectorAll("path");
+let liens = {
+    "29": "https://www.agirabcd.eu/776_p_51031/accueil.html",
+    "22": "https://www.agirabcd.eu/776_p_57928/accueil.html",
+    "56": "https://www.agirabcd.eu/776_p_50170/accueil.html",
+    "35bis": "https://www.agirabcd.eu/776_p_50300/accueil.html",
+    "35": "https://www.agirabcd.eu/776_p_50376/accueil.html",
+    "44": "https://www.agirabcd.eu/776_p_48520/loire-ocEan.html",
+    "49": "https://www.agirabcd.eu/776_p_52544/accueil.html",
+    "85": "https://www.agirabcd.eu/776_p_48520/loire-ocEan.html",
+    "53": "https://www.agirabcd.eu/776_p_52544/accueil.html",
+    "72": "https://www.agirabcd.eu/776_p_52544/accueil.html",
+    "50": "https://www.agirabcd.eu/776_p_58003/accueil.html",
+    "14": "https://www.agirabcd.eu/776_p_58003/accueil.html",
+    "76": "https://www.agirabcd.eu/776_p_53474/accueil.html",
+    "61": "https://www.agirabcd.eu/776_p_58003/accueil.html",
+    "27": "https://www.agirabcd.eu/776_p_53474/accueil.html",
+    "60": "https://www.agirabcd.eu/776_p_48531/oise.html",
+    "02": "https://www.agirabcd.eu/776_p_48543/somme.html",
+    "80": "https://www.agirabcd.eu/776_p_48543/somme.html",
+    "62": "https://www.agirabcd.eu/776_p_49372/accueil.html",
+    "59": "https://www.agirabcd.eu/776_p_57115/accueil.html",
+    "28": "https://www.agirabcd.eu/776_p_53024/accueil.html",
+    "08": "https://www.agirabcd.eu/776_p_48524/marne.html",
+    "51": "https://www.agirabcd.eu/776_p_48524/marne.html",
+    "10": "https://www.agirabcd.eu/776_p_48524/marne.html",
+    "52": "https://www.agirabcd.eu/776_p_48524/marne.html",
+    "55": "https://www.agirabcd.eu/delegation-non-existante.html",
+    "54": "https://www.agirabcd.eu/776_p_57164/accueil.html",
+    "88": "https://www.agirabcd.eu/delegation-non-existante.html",
+    "68": "https://www.agirabcd.eu/776_p_51029/http-www.dt67.agirabcd.eu-776_p_51029-accueil-alsace.html",
+    "67": "https://www.agirabcd.eu/776_p_51029/http-www.dt67.agirabcd.eu-776_p_51029-accueil-alsace.html",
+    "57": "https://www.agirabcd.eu/776_p_57164/accueil.html",
+    "45": "https://www.agirabcd.eu/776_p_57286/accueil.html",
+    "41": "https://www.agirabcd.eu/776_p_54881/accueil.html",
+    "37": "https://www.agirabcd.eu/776_p_54881/accueil.html",
+    "36": "https://www.agirabcd.eu/776_p_57286/accueil.html",
+    "18": "https://www.agirabcd.eu/776_p_57286/accueil.html",
+    "89": "https://www.agirabcd.eu/delegation-non-existante.html",
+    "58": "https://www.agirabcd.eu/delegation-non-existante.html",
+    "21": "https://www.agirabcd.eu/776_p_48507/cOte-d-or.html",
+    "71": "https://www.agirabcd.eu/776_p_48507/cOte-d-or.html",
+    "39": "https://www.agirabcd.eu/delegation-non-existante.html",
+    "25": "https://www.agirabcd.eu/delegation-non-existante.html",
+    "90": "https://www.agirabcd.eu/delegation-non-existante.html",
+    "70": "https://www.agirabcd.eu/delegation-non-existante.html",
+    "17": "https://www.agirabcd.eu/776_p_54665/accueil.html",
+    "33": "https://www.agirabcd.eu/776_p_48228/accueil.html",
+    "40": "https://www.agirabcd.eu/776_p_50012/nous-connaitre.html",
+    "64": "https://www.agirabcd.eu/776_p_50012/nous-connaitre.html",
+    "64bis": "https://www.agirabcd.eu/776_p_58331/accueil.html",
+    "79": "https://www.agirabcd.eu/delegation-non-existante.html",
+    "86": "https://www.agirabcd.eu/delegation-non-existante.html"
+}
+const liensConst = "https://www.agirabcd.eu/delegation-non-existante.html"
+pathClick();
+
+function pathClick(){
+    pathing.forEach(el =>{
+        el.addEventListener("click",() =>{
+            CompareNom(el.getAttribute("data-numerodepartement"))
+        });
+
+    });
+}
+
+function CompareNom(nom){
+        window.location.href = liens?.[nom] || liensConst;
+}
