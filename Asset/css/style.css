@@ -597,3 +597,41 @@ main input{
     text-decoration: none;
     color: var(--main-color-bleu);
 }
+
+/******************CARTE DE FRANCE***************/
+#carte path{
+    fill:var(--main-color-bleu);
+}
+#carte path:hover{
+    stroke-width: 3.5px;
+    stroke:var(--main-color-bleu);
+    stroke:#fc3700;
+    fill:white;
+    cursor: pointer;
+}
+
+/*Qui somme nous **/
+
+.hethique{
+    text-align: center;
+}
+.ethique{
+    display: flex;
+    margin-bottom: 5em;
+}
+.blocethique{
+    flex-direction: column;
+    text-align: center;
+}
+strong{
+    color:var(--main-color-orange);
+    font-size: 20px;
+}
+.imgethique{
+    max-width: 100%;
+    width: 1000px;
+    height:auto;
+    display: block;
+    margin: 0 auto;
+
+}
