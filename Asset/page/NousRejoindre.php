@@ -20,7 +20,7 @@ require_once 'header.php'; ?>
              <li><h4>Pour développer l'activité de votre choix, contactez votre délégation ou notre siège parisien</h4></li>
              <div class="actions">
                  <a href="Noustrouver.php" class="btn">
-                     <input class="styled" type="button" value="Nous rejoindre" >
+                     <input class="styled" type="button" value="Nous trouver" >
                  </a>
              </div>
          </ul>
