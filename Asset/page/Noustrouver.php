@@ -2,7 +2,7 @@
 $titre="Nous trouver";
 require_once "header.php"?>
 <main>
-    <script src="../js/Carte.js" defer></script>
+    <script type="module" src="../js/Carte.js"></script>
 
     <h1>Comment nous rejoindre ?</h1>
     <p>AGIRabcd est composée de 51 délégations territoriales et 45 antennes partout en France, qui disposent de lieux d'échanges afin de favoriser l'entraide.
