@@ -15,7 +15,14 @@ use App\Messages;
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     try {
         $bdd = new BddConnect();
-        $pdo = $bdd->connexion();
+
+        try {
+            $pdo = $bdd->connexion();
+        }
+        catch(BddConnectException $e) {
+            Messages::goHome($e->getMessage(), $e->getType(), "index.php");
+        }
+
         $trousseau = new MariaDBContactRepository($pdo);
 
         $nouveauMessage = new Contact(

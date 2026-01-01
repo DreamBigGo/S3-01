@@ -49,11 +49,12 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 
 <script src="/Asset/js/nav-bar.js"></script>
 
-<nav id="breadcrumb" class="breadcrumb"> Accueil </nav>
-<script src="/Asset/js/breadcrumb.js"></script>
 <?php
 require_once __DIR__ . '/../../../vendor/autoload.php';
 use App\Messages;
 
 Messages::messageFlash();
 ?>
+
+<nav id="breadcrumb" class="breadcrumb"> Accueil </nav>
+<script src="/Asset/js/breadcrumb.js"></script>

@@ -12,16 +12,16 @@ class MariaDBContactRepository implements IContactRepository {
         $stmt = $this->pdo->prepare($sql);
 
         return $stmt->execute([
-            'nom'       => $contact->nom,
-            'prenom'    => $contact->prenom,
-            'societe'   => $contact->societe,
-            'adresse'   => $contact->adresse,
-            'cp'        => $contact->cp,
-            'ville'     => $contact->ville,
-            'telephone' => $contact->telephone,
-            'email'     => $contact->email,
-            'objet'     => $contact->objet,
-            'message'   => $contact->message
+            'nom'       => $contact->getNom(),
+            'prenom'    => $contact->getPrenom(),
+            'societe'   => $contact->getSociete(),
+            'adresse'   => $contact->getAdresse(),
+            'cp'        => $contact->getCp(),
+            'ville'     => $contact->getVille(),
+            'telephone' => $contact->getTelephone(),
+            'email'     => $contact->getEmail(),
+            'objet'     => $contact->getObjet(),
+            'message'   => $contact->getText()
         ]);
     }
 }

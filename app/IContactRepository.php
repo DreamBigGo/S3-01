@@ -2,5 +2,5 @@
 namespace App;
 
 interface IContactRepository {
-    public function save(Contact $message): bool;
+    public function save(Contact $contact): bool;
 }
