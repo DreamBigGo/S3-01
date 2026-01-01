@@ -1,5 +1,11 @@
 
-<?php require_once 'Asset/page/header.php'; ?>
+<?php
+
+if(!session_id()){
+    session_start();
+}
+require_once 'Asset/page/header.php';
+?>
 
 
 <main>

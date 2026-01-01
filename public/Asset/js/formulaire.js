@@ -56,37 +56,25 @@ function remplirRecap() {
 }
 
 function afficherEtape(index) {
-    // Masquer tous les formulaires
     elements.forms.forEach(form => {
         if (form) form.style.display = 'none';
     });
 
     if (elements.forms[index]) {
+        // On utilise flex pour garder ton design
         elements.forms[index].style.setProperty('display', 'flex', 'important');
     }
 
     for (let i = 0; i <= index; i++) {
-        if (elements.divEtapes[i]) {
-            elements.divEtapes[i].style.backgroundColor = 'var(--main-color-bleu)';
-        }
-        if (elements.numeros[i]) {
-            elements.numeros[i].style.color = 'white';
-        }
-        if (i > 0 && elements.separateurs[i]) {
-            elements.separateurs[i].style.backgroundColor = 'var(--main-color-bleu)';
-        }
+        if (elements.divEtapes[i]) elements.divEtapes[i].style.backgroundColor = 'var(--main-color-bleu)';
+        if (elements.numeros[i]) elements.numeros[i].style.color = 'white';
+        if (i > 0 && elements.separateurs[i]) elements.separateurs[i].style.backgroundColor = 'var(--main-color-bleu)';
     }
 
     for (let i = index + 1; i < config.etapes.length; i++) {
-        if (elements.divEtapes[i]) {
-            elements.divEtapes[i].style.backgroundColor = 'white';
-        }
-        if (elements.numeros[i]) {
-            elements.numeros[i].style.color = 'var(--main-color-bleu)';
-        }
-        if (elements.separateurs[i]) {
-            elements.separateurs[i].style.backgroundColor = 'white';
-        }
+        if (elements.divEtapes[i]) elements.divEtapes[i].style.backgroundColor = 'white';
+        if (elements.numeros[i]) elements.numeros[i].style.color = 'var(--main-color-bleu)';
+        if (elements.separateurs[i]) elements.separateurs[i].style.backgroundColor = 'white';
     }
 }
 
@@ -95,17 +83,25 @@ afficherEtape(0);
 elements.btnsSuivant.forEach((btn, index) => {
     if (btn) {
         btn.addEventListener('click', (event) => {
-            event.preventDefault();
-            remplirRecap();
-            afficherEtape(index + 1);
+            const etapeActuelle = elements.forms[index];
+            const champs = etapeActuelle.querySelectorAll('input[required], select[required], textarea[required]');
+            let etapeValide = true;
+            champs.forEach(champ => {
+                if (!champ.checkValidity()) {
+                    champ.reportValidity();
+                    etapeValide = false;
+                }
+            });
+            if (etapeValide) {
+                remplirRecap();
+                afficherEtape(index + 1);
+            }
         });
     }
 });
-
 elements.btnsRetour.forEach((btn, index) => {
     if (btn) {
         btn.addEventListener('click', (event) => {
-            event.preventDefault();
             afficherEtape(index);
         });
     }

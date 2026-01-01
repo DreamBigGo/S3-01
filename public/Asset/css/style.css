@@ -395,19 +395,42 @@ main input{
     height: 4em;
     width: 4em;
     border-radius: 100%;
+    background-color: white;
 }
 .formulaire .separateur1, .formulaire .separateur2, .formulaire .separateur3{
     height: 5px;
     width: 25%;
     border: var(--main-color-bleu) solid 1px;
+    background-color: white;
 }
 .formulaire .numero1, .formulaire .numero2, .formulaire .numero3, .formulaire .numero4{
     color: var(--main-color-bleu);
     font-size: 3em;
 }
-.recapitulatif{
+
+.main-form section #form-contact-global {
+    max-width: 485px;
+    width: 100%;
+}
+
+.form-id, .form-adresse, .form-contact-message, .recapitulatif {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(11, 102, 178, 0.08);
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+}
+
+.recapitulatif {
     word-wrap: break-word;
     overflow-wrap: break-word;
+}
+.recapitulatif ul {
+    list-style: none;
+    padding: 0;
 }
 .recapitulatif .titre-recap{
     font-size: 1.1em;
@@ -420,68 +443,77 @@ main input{
     width: 98%;
     height: 1px;
     background-color: black;
+    margin: 10px 0;
 }
+
 .main-form{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 20px;
 }
+
 .main-form aside{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 50%;
-    height: 75vh;
-    background: rgba(0, 0, 255, 0.1);
-    padding:18px;
-    border-radius:10px
+    width: 40%;
+    min-height: 500px;
+    background: rgba(11, 102, 178, 0.1);
+    padding: 25px;
+    border-radius: 10px;
 }
+
 .main-form aside h1{
-    margin-left: unset;
     margin-bottom: 0.9em;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 32px;
+    color: #0b66b2;
 }
+
+.main-form aside ul {
+    list-style: none;
+    padding: 0;
+}
+
 .main-form aside ul li .titre-aside{
-    font-size: 20px;
+    font-size: 18px;
     color: black;
     font-weight: bold;
-    margin-bottom: 0.5em;
+    margin-bottom: 2px;
 }
+
 .main-form aside ul li .text-aside{
-    margin-bottom: 0.5em;
+    margin-bottom: 15px;
 }
+
 .main-form aside .separation-form{
-    background-color: black;
+    background-color: rgba(0,0,0,0.2);
     margin-top: 1.5em;
-    width: 95%;
-    height: 2px;
+    width: 100%;
+    height: 1px;
 }
+
 .main-form aside .conseille{
     margin-top: 2em;
+    font-size: 0.9em;
+    font-style: italic;
+    color: #555;
 }
+
 .main-form section{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 50%;
-    background-color: white;
-}
-.main-form section form {
-    max-width: 485px;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 6px 20px rgba(11, 102, 178, 0.08);
-    padding: 28px;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
+    background-color: transparent;
 }
 
-.main-form section form h2 {
+.main-form section div h2 {
     margin-top: 0;
     color: #08589a;
     font-size: 1.4rem;
@@ -490,8 +522,10 @@ main input{
     margin-bottom: 8px;
 }
 
-.main-form section form input[type="text"], .main-form section form input[type="email"],
-.main-form section form #message, .main-form section form #objet{
+.main-form section input[type="text"],
+.main-form section input[type="email"],
+.main-form section textarea,
+.main-form section select {
     padding: 10px 12px;
     border-radius: 10px;
     border: 1px solid #e6e9ef;
@@ -499,56 +533,61 @@ main input{
     outline: none;
     transition: border-color 0.2s, box-shadow 0.2s;
     background-color: #ffffff;
+    width: 100%;
 }
 
-.main-form section form input[type="text"]:focus, .main-form section form input[type="email"]:focus,
-.main-form section form #message:focus, .main-form section form #objet:focus{
+.main-form section input:focus,
+.main-form section textarea:focus,
+.main-form section select:focus {
     border-color: #0b66b2;
     box-shadow: 0 0 6px rgba(11, 102, 178, 0.25);
 }
-.main-form section form #message{
-    min-height:120px; resize:vertical
+
+.main-form section textarea {
+    min-height: 120px;
+    resize: vertical;
 }
-.main-form section form button {
+
+.main-form section button {
     background: #0b66b2;
     color: #fff;
     font-weight: 600;
     font-size: 15px;
     border: none;
     border-radius: 10px;
-    padding: 10px 14px;
+    padding: 12px 14px;
     cursor: pointer;
     transition: background-color 0.25s, transform 0.1s;
     margin-top: 8px;
 }
 
-.main-form section form button:hover {
+.main-form section button:hover {
     background-color: #08589a;
 }
 
-.main-form section form button:active {
-    transform: scale(0.98);
+button[id^="retour"] {
+    background-color: #6b7280;
+}
+button[id^="retour"]:hover {
+    background-color: #4b5563;
 }
 
-.main-form section form input::placeholder {
-    color: #6b7280;
-    opacity: 0.8;
-}
-
-/**************************** RESPONSIVITÉ DU FORMULAIRE DE CONTACT *******************************/
+/**************************** RESPONSIVITÉ *******************************/
 
 @media screen and (max-width: 1040px){
     .main-form{
-        display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
-    .main-form aside{
-        width: 90%;
+    .main-form aside, .main-form section{
+        width: 100%;
+        max-width: 485px;
     }
-    .main-form section form{
-        margin: 0 0 3em 0;
+    .main-form section {
+        order: 1;
+    }
+    .main-form aside {
+        order: 2;
     }
 }
 
@@ -634,4 +673,45 @@ strong{
     display: block;
     margin: 0 auto;
 
+}
+
+/**************************** CARTE DE FRANCE ****************************/
+
+.alerte-perso {
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: apparition 0.4s ease-out;
+}
+
+.alerte-success {
+    background-color: #dcfce7;
+    color: #166534;
+    border: 1px solid #bbf7d0;
+}
+
+.alerte-danger {
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+}
+
+.bouton-fermer {
+    background: none;
+    border: none;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    color: inherit;
+    opacity: 0.6;
+}
+
+.bouton-fermer:hover {
+    opacity: 1;
+}
+
+.FermerMessage{
+    height: 15px;
+    width: 15px;
 }
