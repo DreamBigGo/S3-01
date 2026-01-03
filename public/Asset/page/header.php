@@ -8,6 +8,10 @@
 <body>
 
 <?php
+if(!session_id()){
+    session_start();
+}
+
 // Récupère le nom du fichier actuel pour l'active
 $currentPage = basename($_SERVER['PHP_SELF']);
 ?>
@@ -48,6 +52,13 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 </nav>
 
 <script src="/Asset/js/nav-bar.js"></script>
+
+<?php
+require_once __DIR__ . '/../../../vendor/autoload.php';
+use App\Messages;
+
+Messages::messageFlash();
+?>
 
 <nav id="breadcrumb" class="breadcrumb"> Accueil </nav>
 <script src="/Asset/js/breadcrumb.js"></script>

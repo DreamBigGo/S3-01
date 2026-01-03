@@ -2,7 +2,8 @@
   "name": "sae/dreambiggo",
   "description": "Projet Pédagogique IUT de Paris",
   "require": {
-    "phpunit/phpunit": "^9"
+    "phpunit/phpunit": "^9",
+    "ext-pdo": "*"
   },
   "license": "proprietary",
   "autoload": {

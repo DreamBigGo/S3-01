@@ -4,7 +4,7 @@
         <div class="CardConnexion">
             <h2 class="TitreConnexion">Connexion</h2>
 
-            <form action="" method="POST" class="FormConnexion">
+            <form action="traitement_connexion.php" method="POST" class="FormConnexion">
                 <div class="ChampConnexion">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" required placeholder="exemple@agirabcd.com">
