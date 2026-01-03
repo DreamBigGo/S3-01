@@ -421,7 +421,7 @@ main input{
     display: flex;
     flex-direction: column;
     gap: 14px;
-    width: 100%;
+    width: 80%;
 }
 
 .recapitulatif {
@@ -533,7 +533,7 @@ main input{
     outline: none;
     transition: border-color 0.2s, box-shadow 0.2s;
     background-color: #ffffff;
-    width: 100%;
+    width: 90%;
 }
 
 .main-form section input:focus,
@@ -549,7 +549,7 @@ main input{
 }
 
 .main-form section button {
-    background: #0b66b2;
+    background: var(--main-color-bleu);
     color: #fff;
     font-weight: 600;
     font-size: 15px;
@@ -562,7 +562,7 @@ main input{
 }
 
 .main-form section button:hover {
-    background-color: #08589a;
+    background-color: #06467a;
 }
 
 button[id^="retour"] {
@@ -673,4 +673,77 @@ strong{
     display: block;
     margin: 0 auto;
 
+}
+/**************************** Connexion ****************************/
+.PageConnexion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CardConnexion {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+.TitreConnexion {
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: sans-serif;
+    color: #333;
+}
+.ChampConnexion {
+    margin-bottom: 20px;
+}
+.ChampConnexion label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #555;
+}
+.ChampConnexion input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #eee;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;/
+transition: border-color 0.3s;
+}
+.ChampConnexion input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+.btnConnexion {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--main-color-bleu);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.btnConnexion:hover {
+    background-color: #06467a;
+}
+.MdpOublie {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.85rem;
+    font-family: sans-serif;
+    color: var(--main-color-bleu);
+    text-decoration: none;
+}
+.MdpOublie:hover {
+    text-decoration: underline;
 }
