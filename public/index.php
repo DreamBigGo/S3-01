@@ -1,5 +1,8 @@
 
-<?php require_once 'Asset/page/header.php'; ?>
+<?php require_once 'Asset/page/header.php';
+
+echo password_hash("1234", PASSWORD_DEFAULT);
+?>
 
 
 <main>

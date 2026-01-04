@@ -809,7 +809,6 @@ transition: border-color 0.3s;
     color: black;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     transition: all 0.3s ease;
-    border: 1px solid #eee;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -818,7 +817,7 @@ transition: border-color 0.3s;
 .btn_action:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0,0,0,0.1);
-    border-color: #3498db;
+    border: 1px solid var(--main-color-bleu);
 }
 
 .btn_action i {
@@ -837,8 +836,8 @@ transition: border-color 0.3s;
     color: #7f8c8d;
 }
 
-.gestionAdmin {
-    display: block;
+.gestionAction {
+    display: none;
     background: #ffffff;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
@@ -846,7 +845,10 @@ transition: border-color 0.3s;
     margin-top: 40px;
     border: 1px solid #eee;
 }
-.gestionAdmin h2 {
+#sectionContenu-NewMembre, #sectionContenu-missionAdherent, #sectionContenu-missionBenevole {
+    display: block;
+}
+.gestionAction h2 {
     font-size: 1.4rem;
     margin-bottom: 20px;
     color: #2c3e50;
@@ -901,4 +903,78 @@ transition: border-color 0.3s;
 .btnForm:hover {
     background-color: #2980b9;
     transform: scale(1.02);
+}
+
+/* --- GRILLE DE CONTENEUR --- */
+.missions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 25px;
+    padding: 20px 0;
+}
+
+/* --- CARTE ARTICLE --- */
+.ArticleMission {
+    background: #ffffff;
+    border-radius: 15px;
+    border: 1px solid #eef2f6;
+    padding: 20px;
+    position: relative; /* Pour positionner l'ID et le Dépt absolument */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ArticleMission:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border-color: #3498db;
+}
+.mission-dep {
+    display: inline-block;
+    margin-top: 15px;
+    background: #f0f3f5;
+    color: #7f8c8d;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+.ConteneurMission {
+    margin-top: 10px;
+}
+.mission-desc {
+    color: #2c3e50;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    min-height: 3em;
+}
+.mission-dates {
+    background: #f9fbff;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.mission-dates p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #5d6d7e;
+}
+.mission-dates span {
+    color: #2c3e50;
+    font-weight: 500;
+}
+.mission-budget {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #27ae60;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.mission-budget::before {
+    content: "💰";
 }

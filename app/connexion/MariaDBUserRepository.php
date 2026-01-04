@@ -11,7 +11,7 @@ class MariaDBUserRepository implements IMembreRepository {
     }
     public function findByEmail(string $email): ?Membre {
 
-        $sql = "SELECT IdMembre, Email, mdp FROM membres WHERE Email = :email";
+        $sql = "SELECT IdMembre, role, Email, mdp FROM membre WHERE Email = :email";
 
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute(['email' => $email]);
@@ -23,20 +23,9 @@ class MariaDBUserRepository implements IMembreRepository {
         }
         return new Membre(
             (int)$data['IdMembre'],
+            $data['role'],
             $data['Email'],
             $data['mdp']
         );
-    }
-
-    public function save(Membre $membre): bool {
-        $sql = "INSERT INTO membres (Email, mdp) 
-                VALUES (:email, :mdp)";
-
-        $stmt = $this->pdo->prepare($sql);
-
-        return $stmt->execute([
-            'email' => $membre->getEmail(),
-            'mdp' => $membre->getMdp()
-        ]);
     }
 }
