@@ -13,6 +13,7 @@ body {
 }
 h1{
     color: var(--main-color-bleu);
+    margin-bottom: 1em;
 }
 .logo{
     width:200px;
@@ -653,6 +654,7 @@ button[id^="retour"]:hover {
 
 .hethique{
     text-align: center;
+    margin-top: 10pxr;
 }
 .ethique{
     display: flex;
@@ -661,10 +663,28 @@ button[id^="retour"]:hover {
 .blocethique{
     flex-direction: column;
     text-align: center;
+   box-shadow: #000000 0 0 5px ;
+    padding: 2em;
+    margin: 1em;
+    border-radius: 10px;
+    width: 300px;
+    height: auto;
+}
+.blocethique h2{
+    color:var(--main-color-orange);
+    margin-bottom: 0.5em;
+}
+.bene p{
+    margin-top: 1em;
+    font-size: 18px;
 }
 strong{
     color:var(--main-color-orange);
     font-size: 20px;
+}
+.ensemble p{
+    margin-top: 1em;
+    font-size: 18px;
 }
 .imgethique{
     max-width: 100%;
@@ -673,4 +693,10 @@ strong{
     display: block;
     margin: 0 auto;
 
+}
+.video{
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    margin-bottom: 5em;
 }
