@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Gestion\admin\NouveauMembre;
+namespace App\Gestion\NouveauMembre;
 
 class MariaDBNouveauMembreRepository implements INouveauMembreRepository {
     private \PDO $pdo;

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Gestion\admin\NouveauMembre;
+namespace App\Gestion\NouveauMembre;
 
 interface INouveauMembreRepository {
     public function save(NouveauMembre $membre): bool;

@@ -3,12 +3,12 @@ if(!session_id()) {
     session_start();
 }
 
-require_once __DIR__ . '/../../../../../vendor/autoload.php';
+require_once __DIR__ . '/../../../../vendor/autoload.php';
 
 use App\config\BddConnect;
 use App\Exceptions\BddConnectException;
-use App\Gestion\admin\NouveauMembre\MariaDBNouveauMembreRepository;
-use App\Gestion\admin\NouveauMembre\NouveauMembre;
+use App\Gestion\NouveauMembre\MariaDBNouveauMembreRepository;
+use App\Gestion\NouveauMembre\NouveauMembre;
 use App\Messages;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             Messages::goHome(
                 "Membre ajouté avec succé",
                 "success",
-                "../../pageGestion/admin.php"
+                "../pageGestion/admin.php"
             );
         }
     }
@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         Messages::goHome(
             $e->getMessage(),
             $e->getType(),
-            "../../pageGestion/admin.php"
+            "../pageGestion/admin.php"
         );
     }
 }

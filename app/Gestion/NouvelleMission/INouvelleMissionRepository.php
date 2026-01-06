@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Gestion\admin\NouvelleMission;
+namespace App\Gestion\NouvelleMission;
 
 interface INouvelleMissionRepository {
     public function save(NouvelleMission $mission): bool;

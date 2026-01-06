@@ -1,14 +1,19 @@
 <?php
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 if(!session_id()) {
     session_start();
 }
 
-require_once __DIR__ . '/../../../../../vendor/autoload.php';
+require_once __DIR__ . '/../../../../vendor/autoload.php';
 
 use App\config\BddConnect;
 use App\Exceptions\BddConnectException;
-use App\Gestion\admin\NouvelleMission\MariaDBNouvelleMissionRepository;
-use App\Gestion\admin\NouvelleMission\NouvelleMission;
+use App\Gestion\NouvelleMission\MariaDBNouvelleMissionRepository;
+use App\Gestion\NouvelleMission\NouvelleMission;
 use App\Messages;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -31,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             Messages::goHome(
                 "Mission ajouté avec succé",
                 "success",
-                "../../pageGestion/admin.php"
+                "../pageGestion/admin.php"
             );
         }
     }
@@ -39,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         Messages::goHome(
             $e->getMessage(),
             $e->getType(),
-            "../../pageGestion/admin.php"
+            "../pageGestion/admin.php"
         );
     }
 }

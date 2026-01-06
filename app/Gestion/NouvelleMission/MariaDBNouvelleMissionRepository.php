@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Gestion\admin\NouvelleMission;
+namespace App\Gestion\NouvelleMission;
 
 class MariaDBNouvelleMissionRepository implements INouvelleMissionRepository {
     private \PDO $pdo;

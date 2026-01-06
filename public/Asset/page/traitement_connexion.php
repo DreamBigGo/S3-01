@@ -32,17 +32,13 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             if($role === 'Admin') {
                 $destination = "pageGestion/admin.php";
-            }
-            elseif ($role === 'Benevole') {
-                $destination = "pageGestion/benevole.php";
-            }
-            elseif ($role === 'Adherent') {
-                $destination = "pageGestion/adherent.php";
+                Messages::goHome("Connexion Réussie", "success", $destination);
             }
             else{
-                $destination = "pageGestion/connexion.php";
+                $destination = "../../index.php";
+                Messages::goHome("Vous n'êtes pas autorisé a accéder a cette page !", "danger", $destination);
             }
-            Messages::goHome("Connexion Réussie", "success", $destination);
+
 
         } catch(AuthentificationException $e) {
             Messages::goHome($e->getMessage(), $e->getType(), "connexion.php");
@@ -53,17 +49,17 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 else {
-    header("Location: index.php");
+    header("Location: ../../../index.php");
     exit();
 }
 
 function VerificationConnexion(string $roleAttendu): void {
     if (!isset($_SESSION['user_id'])) {
-        Messages::goHome("Vous n'êtes pas autorisé a accéder a cette page !", "danger", "index.php");
+        Messages::goHome("Vous n'êtes pas autorisé a accéder a cette page !", "danger", "../../../index.php");
         exit();
     }
     if ($_SESSION['user_role'] !== $roleAttendu) {
-        Messages::goHome("Vous n'êtes pas autorisé a accéder a cette page !", "danger", "index.php");
+        Messages::goHome("Vous n'êtes pas autorisé a accéder a cette page !", "danger", "../../../index.php");
         exit();
     }
 }
