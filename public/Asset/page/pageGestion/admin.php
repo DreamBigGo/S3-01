@@ -23,6 +23,8 @@ $nbBenevoles = $membre->compterMembre('Benevole');
 
 $nbMission = $mission->compterMission();
 
+$listeMembres = $membre->recupererTousLesMembres();
+$listeMission = $mission->recupererTouteLesMissions();
 require_once '../header.php';
 ?>
 
@@ -37,6 +39,16 @@ require_once '../header.php';
             <a href="#" class="btn_action" id="action-NewMission">
                 <h3>Créer Mission</h3>
                 <p>Lancer une nouvelle mission humanitaire</p>
+            </a>
+
+            <a href="#" class="btn_action" id="action-ListMembre">
+                <h3>Liste des Membres</h3>
+                <p>Liste de tous les membres d'AGIRabcd</p>
+            </a>
+
+            <a href="#" class="btn_action" id="action-ListMission">
+                <h3>Liste des Missions</h3>
+                <p>Liste de toutes les Missions d'AGIRabcd</p>
             </a>
         </div>
 
@@ -116,6 +128,62 @@ require_once '../header.php';
 
                 <button type="submit" class="btnForm">Publier la Mission</button>
             </form>
+        </section>
+        <section class="gestionAction" id="sectionContenu-ListMembre">
+            <h2>Liste des Membres</h2>
+            <div class="ConteneurTableau">
+                <table class="Tableau">
+                    <thead>
+                    <tr>
+                        <th>Nom / Tel</th>
+                        <th>Email</th>
+                        <th>Rôle</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <?php foreach ($listeMembres as $m): ?>
+                        <tr>
+                            <td><?= htmlspecialchars($m['Coordonné'] ?? 'N/A') ?></td>
+                            <td><?= htmlspecialchars($m['email'] ?? 'N/A') ?></td>
+                            <td><?= htmlspecialchars($m['Role'] ?? 'N/A') ?></td>
+                            <td>
+                                <a href="../traitementPageGestion/traitement-supprimerMembre.php?id=<?= $m['IdMembre'] ?>" class="btn-supprimer">Supprimer</a>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="gestionAction" id="sectionContenu-ListMission">
+            <h2>Liste des Missions</h2>
+            <div class="ConteneurTableau">
+                <table class="Tableau">
+                    <thead>
+                    <tr>
+                        <th>Descirption</th>
+                        <th>Date de Debut</th>
+                        <th>Date de Fin</th>
+                        <th>Budget</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <?php foreach ($listeMission as $m): ?>
+                        <tr>
+                            <td><?= htmlspecialchars($m['Description'] ?? 'N/A') ?></td>
+                            <td><?= htmlspecialchars($m['DateDebut'] ?? 'N/A') ?></td>
+                            <td><?= htmlspecialchars($m['DateFin'] ?? 'N/A') ?></td>
+                            <td><?= htmlspecialchars($m['Budget'] ?? 'N/A') ?></td>
+                            <td>
+                                <a href="../traitementPageGestion/traitement-supprimerMission.php?id=<?= $m['IdMission'] ?>" class="btn-supprimer">Supprimer</a>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </div>
         </section>
     </div>
 

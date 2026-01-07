@@ -38,4 +38,17 @@ class MariaDBNouveauMembreRepository implements INouveauMembreRepository {
         $nbMembre = $stmt->fetch(\PDO::FETCH_ASSOC);
         return $nbMembre['COUNT(*)'];
     }
+
+    public function supprimerMembre($id): void {
+        $sql = "DELETE FROM membre WHERE IdMembre = :id";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute(['id' => $id]);
+    }
+
+    public function recupererTousLesMembres(): array {
+        $sql = "SELECT * FROM MEMBRE";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute();
+        return $stmt->fetchAll(\PDO::FETCH_ASSOC);
+    }
 }

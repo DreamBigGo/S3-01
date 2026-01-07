@@ -291,8 +291,18 @@ main input{
 .nav-cache{
     display: none;
 }
+@media screen and (max-width: 1700px){
+    .menu a{
+        font-size: 20px;
+    }
+    .styled {
+        font-size: 20px;
+        padding: 12px 22px;
+    }
+}
 
-@media screen and (max-width: 1300px) {
+
+@media screen and (max-width: 1450px) {
     .Menu-Burger-Icon{
         display: flex;
         position: absolute;
@@ -310,7 +320,7 @@ main input{
         justify-content: center;
         align-items: center;
         width: 350px;
-        height: 520px;
+        height: 615px;
         background: #ffffff;
     }
     .nav-cache a{
@@ -821,8 +831,11 @@ transition: border-color 0.3s;
 .ContenueAdmin{
     display: flex;
     align-items: flex-start;
-    justify-content: flex-end;
+    justify-content: flex-start;
     gap: 30px;
+    width: 90%;
+    margin-left: 0;
+    padding-left: 6em;
 }
 .ConteneurAction{
     flex: 3;
@@ -885,7 +898,9 @@ transition: border-color 0.3s;
 .gestionAction h2 {
     font-size: 1.4rem;
     margin-bottom: 20px;
-    color: #2c3e50;
+    color: #333;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 10px;
 }
 .formAdmin {
     display: flex;
@@ -1009,7 +1024,6 @@ transition: border-color 0.3s;
 }
 .info-admin {
     flex: 1;
-    min-width: 325px;
     background: #ffffff;
     border-radius: 15px;
     padding: 50px 30px;
@@ -1084,5 +1098,64 @@ transition: border-color 0.3s;
     .info-admin {
         width: 100%;
         min-height: auto;
+    }
+}
+.ConteneurTableau {
+    overflow-x: auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px;
+}
+.gestionAction#sectionContenu-ListMembre {
+    margin-top: 20px;
+}
+.ConteneurTableau {
+    overflow-x: auto;
+    background: #fff;
+    border-radius: 5px;
+}
+.Tableau {
+    width: 100%;
+    border-collapse: collapse;
+}
+.Tableau thead tr {
+    background-color: #eeeeee;
+    text-align: left;
+}
+.Tableau th,
+.Tableau td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #dddddd;
+}
+.btn-supprimer {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid #ff0000;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+.btn-supprimer:hover {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+@media (max-width: 1100px) {
+    .ContenueAdmin {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 2em;
+    }
+    .ConteneurAction {
+        width: 100%;
+    }
+    .info-admin {
+        width: 100%;
+        max-width: 500px;
+        min-width: 0;
+        margin: 30px 0;
     }
 }
