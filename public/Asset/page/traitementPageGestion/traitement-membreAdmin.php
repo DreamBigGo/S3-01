@@ -8,7 +8,7 @@ require_once __DIR__ . '/../../../../vendor/autoload.php';
 use App\config\BddConnect;
 use App\Exceptions\BddConnectException;
 use App\Gestion\NouveauMembre\MariaDBNouveauMembreRepository;
-use App\Gestion\NouveauMembre\NouveauMembre;
+use App\Membre;
 use App\Messages;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $trousseau = new MariaDBNouveauMembreRepository($pdo);
 
-        $nouveauMembre = new NouveauMembre(
+        $nouveauMembre = new Membre(
             null,
             $_POST['coordonne'],
             $_POST['email'],

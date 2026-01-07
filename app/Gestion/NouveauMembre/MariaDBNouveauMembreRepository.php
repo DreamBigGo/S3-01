@@ -2,6 +2,8 @@
 
 namespace App\Gestion\NouveauMembre;
 
+use App\Membre;
+
 class MariaDBNouveauMembreRepository implements INouveauMembreRepository {
     private \PDO $pdo;
 
@@ -9,7 +11,7 @@ class MariaDBNouveauMembreRepository implements INouveauMembreRepository {
         $this->pdo = $pdo;
     }
 
-    public function save(NouveauMembre $membre): bool {
+    public function save(Membre $membre): bool {
         $sql = "INSERT INTO MEMBRE (Coordonné, Disponibilité, Role, Email, Mdp) 
                 VALUES (:coord, :dispo, :role, :email, :mdp)";
 

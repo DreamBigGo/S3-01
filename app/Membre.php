@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Gestion\NouveauMembre;
+namespace App;
 
-class NouveauMembre {
+class Membre {
     public function __construct(
         private ?int $id = null,
         private string $coordonnees = "",

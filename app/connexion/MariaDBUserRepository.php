@@ -1,6 +1,7 @@
 <?php
 namespace App\connexion;
 
+use App\Membre;
 use \PDO;
 
 class MariaDBUserRepository implements IMembreRepository {
@@ -23,9 +24,11 @@ class MariaDBUserRepository implements IMembreRepository {
         }
         return new Membre(
             (int)$data['IdMembre'],
-            $data['role'],
+            '',
             $data['Email'],
-            $data['mdp']
+            $data['mdp'],
+            $data['role'],
+            ''
         );
     }
 }
