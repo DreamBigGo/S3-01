@@ -20,7 +20,7 @@
 
     <main class="main-form">
         <section>
-            <form action="traitement_formulaire.php" method="post" id="form-contact-global">
+            <form action="traitement_PageContact.php" method="post" id="form-contact-global">
 
                 <div class="form-id">
                     <h2>Identité</h2>

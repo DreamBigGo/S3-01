@@ -9,7 +9,7 @@ body {
 }
 *{
     margin: 0;
-    font-family: "Gill Sans", sans-serif;
+    font-family: sans-serif, "Gill Sans";
 }
 h1{
     color: var(--main-color-bleu);
@@ -310,7 +310,7 @@ main input{
         justify-content: center;
         align-items: center;
         width: 350px;
-        height: 430px;
+        height: 520px;
         background: #ffffff;
     }
     .nav-cache a{
@@ -422,7 +422,7 @@ main input{
     display: flex;
     flex-direction: column;
     gap: 14px;
-    width: 100%;
+    width: 80%;
 }
 
 .recapitulatif {
@@ -534,7 +534,7 @@ main input{
     outline: none;
     transition: border-color 0.2s, box-shadow 0.2s;
     background-color: #ffffff;
-    width: 100%;
+    width: 90%;
 }
 
 .main-form section input:focus,
@@ -550,7 +550,7 @@ main input{
 }
 
 .main-form section button {
-    background: #0b66b2;
+    background: var(--main-color-bleu);
     color: #fff;
     font-weight: 600;
     font-size: 15px;
@@ -563,7 +563,7 @@ main input{
 }
 
 .main-form section button:hover {
-    background-color: #08589a;
+    background-color: #06467a;
 }
 
 button[id^="retour"] {
@@ -693,10 +693,4 @@ strong{
     display: block;
     margin: 0 auto;
 
-}
-.video{
-    display: flex;
-    justify-content: center;
-    margin-top: 3em;
-    margin-bottom: 5em;
 }
