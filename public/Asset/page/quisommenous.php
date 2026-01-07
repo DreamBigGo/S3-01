@@ -23,7 +23,7 @@
             entreprises et et des associations locales.
         </p>
 
-        <img src="/Asset/img/qui%20somme%20nous%20.png" alt="information divers" class="imgethique">
+        <img src="/public/Asset/img/qui%20somme%20nous%20.png" alt="information divers" class="imgethique">
         <h1 class="hethique">Notre éthique</h1>
 
         <div class="ethique">

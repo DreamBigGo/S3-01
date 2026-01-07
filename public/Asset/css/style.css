@@ -9,7 +9,7 @@ body {
 }
 *{
     margin: 0;
-    font-family: "Gill Sans", sans-serif;
+    font-family: sans-serif, "Gill Sans";
 }
 h1{
     color: var(--main-color-bleu);
@@ -309,7 +309,7 @@ main input{
         justify-content: center;
         align-items: center;
         width: 350px;
-        height: 430px;
+        height: 520px;
         background: #ffffff;
     }
     .nav-cache a{
@@ -395,19 +395,42 @@ main input{
     height: 4em;
     width: 4em;
     border-radius: 100%;
+    background-color: white;
 }
 .formulaire .separateur1, .formulaire .separateur2, .formulaire .separateur3{
     height: 5px;
     width: 25%;
     border: var(--main-color-bleu) solid 1px;
+    background-color: white;
 }
 .formulaire .numero1, .formulaire .numero2, .formulaire .numero3, .formulaire .numero4{
     color: var(--main-color-bleu);
     font-size: 3em;
 }
-.recapitulatif{
+
+.main-form section #form-contact-global {
+    max-width: 485px;
+    width: 100%;
+}
+
+.form-id, .form-adresse, .form-contact-message, .recapitulatif {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(11, 102, 178, 0.08);
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 80%;
+}
+
+.recapitulatif {
     word-wrap: break-word;
     overflow-wrap: break-word;
+}
+.recapitulatif ul {
+    list-style: none;
+    padding: 0;
 }
 .recapitulatif .titre-recap{
     font-size: 1.1em;
@@ -420,68 +443,77 @@ main input{
     width: 98%;
     height: 1px;
     background-color: black;
+    margin: 10px 0;
 }
+
 .main-form{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 20px;
 }
+
 .main-form aside{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 50%;
-    height: 75vh;
-    background: rgba(0, 0, 255, 0.1);
-    padding:18px;
-    border-radius:10px
+    width: 40%;
+    min-height: 500px;
+    background: rgba(11, 102, 178, 0.1);
+    padding: 25px;
+    border-radius: 10px;
 }
+
 .main-form aside h1{
-    margin-left: unset;
     margin-bottom: 0.9em;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 32px;
+    color: #0b66b2;
 }
+
+.main-form aside ul {
+    list-style: none;
+    padding: 0;
+}
+
 .main-form aside ul li .titre-aside{
-    font-size: 20px;
+    font-size: 18px;
     color: black;
     font-weight: bold;
-    margin-bottom: 0.5em;
+    margin-bottom: 2px;
 }
+
 .main-form aside ul li .text-aside{
-    margin-bottom: 0.5em;
+    margin-bottom: 15px;
 }
+
 .main-form aside .separation-form{
-    background-color: black;
+    background-color: rgba(0,0,0,0.2);
     margin-top: 1.5em;
-    width: 95%;
-    height: 2px;
+    width: 100%;
+    height: 1px;
 }
+
 .main-form aside .conseille{
     margin-top: 2em;
+    font-size: 0.9em;
+    font-style: italic;
+    color: #555;
 }
+
 .main-form section{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 50%;
-    background-color: white;
-}
-.main-form section form {
-    max-width: 485px;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 6px 20px rgba(11, 102, 178, 0.08);
-    padding: 28px;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
+    background-color: transparent;
 }
 
-.main-form section form h2 {
+.main-form section div h2 {
     margin-top: 0;
     color: #08589a;
     font-size: 1.4rem;
@@ -490,8 +522,10 @@ main input{
     margin-bottom: 8px;
 }
 
-.main-form section form input[type="text"], .main-form section form input[type="email"],
-.main-form section form #message, .main-form section form #objet{
+.main-form section input[type="text"],
+.main-form section input[type="email"],
+.main-form section textarea,
+.main-form section select {
     padding: 10px 12px;
     border-radius: 10px;
     border: 1px solid #e6e9ef;
@@ -499,56 +533,61 @@ main input{
     outline: none;
     transition: border-color 0.2s, box-shadow 0.2s;
     background-color: #ffffff;
+    width: 90%;
 }
 
-.main-form section form input[type="text"]:focus, .main-form section form input[type="email"]:focus,
-.main-form section form #message:focus, .main-form section form #objet:focus{
+.main-form section input:focus,
+.main-form section textarea:focus,
+.main-form section select:focus {
     border-color: #0b66b2;
     box-shadow: 0 0 6px rgba(11, 102, 178, 0.25);
 }
-.main-form section form #message{
-    min-height:120px; resize:vertical
+
+.main-form section textarea {
+    min-height: 120px;
+    resize: vertical;
 }
-.main-form section form button {
-    background: #0b66b2;
+
+.main-form section button {
+    background: var(--main-color-bleu);
     color: #fff;
     font-weight: 600;
     font-size: 15px;
     border: none;
     border-radius: 10px;
-    padding: 10px 14px;
+    padding: 12px 14px;
     cursor: pointer;
     transition: background-color 0.25s, transform 0.1s;
     margin-top: 8px;
 }
 
-.main-form section form button:hover {
-    background-color: #08589a;
+.main-form section button:hover {
+    background-color: #06467a;
 }
 
-.main-form section form button:active {
-    transform: scale(0.98);
+button[id^="retour"] {
+    background-color: #6b7280;
+}
+button[id^="retour"]:hover {
+    background-color: #4b5563;
 }
 
-.main-form section form input::placeholder {
-    color: #6b7280;
-    opacity: 0.8;
-}
-
-/**************************** RESPONSIVITÉ DU FORMULAIRE DE CONTACT *******************************/
+/**************************** RESPONSIVITÉ *******************************/
 
 @media screen and (max-width: 1040px){
     .main-form{
-        display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
-    .main-form aside{
-        width: 90%;
+    .main-form aside, .main-form section{
+        width: 100%;
+        max-width: 485px;
     }
-    .main-form section form{
-        margin: 0 0 3em 0;
+    .main-form section {
+        order: 1;
+    }
+    .main-form aside {
+        order: 2;
     }
 }
 
@@ -634,4 +673,392 @@ strong{
     display: block;
     margin: 0 auto;
 
+}
+
+/**************************** Notif Form Contact ****************************/
+
+.alerte-perso {
+    margin-top: 3px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: apparition 0.4s ease-out;
+}
+
+.alerte-success {
+    background-color: #dcfce7;
+    color: #166534;
+    border: 1px solid #bbf7d0;
+}
+
+.alerte-danger {
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+}
+
+.bouton-fermer {
+    background: none;
+    border: none;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    color: inherit;
+    opacity: 0.6;
+}
+
+.bouton-fermer:hover {
+    opacity: 1;
+}
+
+.FermerMessage{
+    height: 15px;
+    width: 15px;
+}
+
+/**************************** Connexion ****************************/
+.PageConnexion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CardConnexion {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+.TitreConnexion {
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: sans-serif;
+    color: #333;
+}
+.ChampConnexion {
+    margin-bottom: 20px;
+}
+.ChampConnexion label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #555;
+}
+.ChampConnexion input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #eee;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;/
+transition: border-color 0.3s;
+}
+.ChampConnexion input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+.btnConnexion {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--main-color-bleu);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.btnConnexion:hover {
+    background-color: #06467a;
+}
+.MdpOublie {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.85rem;
+    font-family: sans-serif;
+    color: var(--main-color-bleu);
+    text-decoration: none;
+}
+.MdpOublie:hover {
+    text-decoration: underline;
+}
+
+/**************************** Page Admin ****************************/
+.ContenueAdmin{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 30px;
+}
+.ConteneurAction{
+    flex: 3;
+}
+.conteneur_btn {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.btn_action {
+    border: var(--main-color-bleu);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn_action:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    border: 1px solid var(--main-color-bleu);
+}
+
+.btn_action i {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #3498db;
+}
+
+.btn_action h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.btn_action p {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+.gestionAction {
+    display: none;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    margin-top: 40px;
+    border: 1px solid #eee;
+}
+#sectionContenu-NewMembre, #sectionContenu-missionAdherent, #sectionContenu-missionBenevole {
+    display: block;
+}
+.gestionAction h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+.formAdmin {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.formChamps {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.conteneurChamps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.formAdmin label {
+    font-weight: 600;
+    color: #333;
+    font-size: 0.95rem;
+}
+.formAdmin input,
+.formAdmin textarea,
+.formAdmin select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+.formAdmin input:focus,
+.formAdmin textarea:focus {
+    outline: none;
+    border-color: var(--main-color-bleu, #3498db);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+.btnForm {
+    background-color: var(--main-color-bleu, #3498db);
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: 0.3s ease;
+}
+.btnForm:hover {
+    background-color: #2980b9;
+    transform: scale(1.02);
+}
+
+/* --- GRILLE DE CONTENEUR --- */
+.missions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 25px;
+    padding: 20px 0;
+}
+
+/* --- CARTE ARTICLE --- */
+.ArticleMission {
+    background: #ffffff;
+    border-radius: 15px;
+    border: 1px solid #eef2f6;
+    padding: 20px;
+    position: relative; /* Pour positionner l'ID et le Dépt absolument */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ArticleMission:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border-color: #3498db;
+}
+.mission-dep {
+    display: inline-block;
+    margin-top: 15px;
+    background: #f0f3f5;
+    color: #7f8c8d;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+.ConteneurMission {
+    margin-top: 10px;
+}
+.mission-desc {
+    color: #2c3e50;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    min-height: 3em;
+}
+.mission-dates {
+    background: #f9fbff;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.mission-dates p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #5d6d7e;
+}
+.mission-dates span {
+    color: #2c3e50;
+    font-weight: 500;
+}
+.mission-budget {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #27ae60;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.info-admin {
+    flex: 1;
+    min-width: 325px;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 50px 30px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+}
+.tete-aside h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+}
+.conteneurStat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+.statTotal, .statTotalMissions {
+    background: #f8f9fa;
+    padding: 20px 10px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+.statTotal .label, .statTotalMissions .label {
+    display: block;
+    font-size: 1rem;
+    color: #7f8c8d;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.statTotal .value, .statTotalMissions .value {
+    display: block;
+    font-size: 3rem;
+    font-weight: 650;
+    color: #2c3e50;
+}
+.ItemStat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #eee;
+}
+.cateAdmin, .cateAdherent, .cateBenevole {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.cateAdmin { background-color: #e74c3c; }
+.cateAdherent { background-color: #3498db; }
+.cateBenevole { background-color: #2ecc71; }
+.ItemStat .nombre {
+    font-weight: 700;
+    color: #2c3e50;
+}
+.statTotalMissions {
+    background: #fff9e6;
+    border-left: 6px solid #f1c40f;
+}
+@media (max-width: 1100px) {
+    .ContenueAdmin{
+        flex-direction: column;
+    }
+    .info-admin {
+        width: 100%;
+        min-height: auto;
+    }
 }
