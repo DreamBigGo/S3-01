@@ -31,6 +31,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
     <!-- Boutons -->
     <a class="btn" href="/Asset/page/soliciter.php"><input class="styled" type="button" value="Contacté AGIRabcd" /></a>
     <a class="btn" href="/Asset/page/soutenir.php"><input class="styled" type="button" value="Soutenir AGIRabcd" /></a>
+    <a class="btn" href="/Asset/page/connexion.php"><input class="styled" type="button" value="Se connecter" /></a>
 
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <label for="nav-toggle" class="nav-toggle-label">
@@ -49,6 +50,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 
     <a class="btn" href="/Asset/page/soliciter.php"><input class="styled" type="button" value="Contacté AGIRabcd" /></a>
     <a class="btn" href="/Asset/page/soutenir.php"><input class="styled" type="button" value="Soutenir AGIRabcd" /></a>
+    <a class="btn" href="/Asset/page/connexion.php"><input class="styled" type="button" value="Se connecter" /></a>
 </nav>
 
 <script src="/Asset/js/nav-bar.js"></script>
