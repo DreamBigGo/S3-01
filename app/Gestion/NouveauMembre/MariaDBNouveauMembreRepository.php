@@ -22,4 +22,18 @@ class MariaDBNouveauMembreRepository implements INouveauMembreRepository {
             ':dispo' => $membre->getDisponibilite()
         ]);
     }
+
+    public function compterMembre(?String $role = null): int {
+        if ($role) {
+            $sql = "SELECT COUNT(*) FROM membre WHERE Role = :role";
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute(['role' => $role]);
+        } else {
+            $sql = "SELECT COUNT(*) FROM membre";
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute();
+        }
+        $nbMembre = $stmt->fetch(\PDO::FETCH_ASSOC);
+        return $nbMembre['COUNT(*)'];
+    }
 }

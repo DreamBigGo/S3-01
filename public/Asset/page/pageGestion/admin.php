@@ -3,9 +3,29 @@
 require_once __DIR__ . '/../../../../vendor/autoload.php';
 session_start();
 use App\Verification;
+use App\Gestion\NouveauMembre\MariaDBNouveauMembreRepository;
+use App\Gestion\NouvelleMission\MariaDBNouvelleMissionRepository;
+use App\config\BddConnect;
+
+$dbConnect = new BddConnect(); // Remplace par le bon namespace si besoin
+$pdo = $dbConnect->connexion();
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 $verification = new Verification();
 $verification->VerificationConnexion("Admin");
+
+$membre = new MariaDBNouveauMembreRepository($pdo);
+$mission = new MariaDBNouvelleMissionRepository($pdo);
+
+$totalMembres = $membre->compterMembre();
+$nbAdmins = $membre->compterMembre('Admin');
+$nbAdherents = $membre->compterMembre('Adherent');
+$nbBenevoles = $membre->compterMembre('Benevole');
+
+$nbMission = $mission->compterMission();
 
 require_once '../header.php';
 ?>
@@ -111,7 +131,7 @@ require_once '../header.php';
         <div class="conteneurStat">
             <div class="statTotal">
                 <span class="label">Total Membres</span>
-                <span class="value">124</span>
+                <span class="value"><?= $totalMembres ?></span>
             </div>
 
             <hr>
@@ -119,24 +139,24 @@ require_once '../header.php';
             <div class="ItemStat">
                 <span class="cateAdmin"></span>
                 <span class="label">Administrateurs</span>
-                <span class="nombre">4</span>
+                <span class="nombre"><?= $nbAdmins ?></span>
             </div>
             <div class="ItemStat">
                 <span class="cateAdherent"></span>
                 <span class="label">Adhérents</span>
-                <span class="nombre">85</span>
+                <span class="nombre"><?= $nbAdherents ?></span>
             </div>
             <div class="ItemStat">
                 <span class="cateBenevole"></span>
                 <span class="label">Bénévoles</span>
-                <span class="nombre">35</span>
+                <span class="nombre"><?= $nbBenevoles ?></span>
             </div>
 
             <hr>
 
-            <div class="statTotal missions">
+            <div class="statTotalMissions">
                 <span class="label">Missions en cours</span>
-                <span class="value">12</span>
+                <span class="value"><?= $nbMission ?></span>
             </div>
         </div>
     </aside>

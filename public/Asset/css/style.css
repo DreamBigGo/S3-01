@@ -994,7 +994,7 @@ transition: border-color 0.3s;
     display: flex;
     flex-direction: column;
 }
-.aside-header h3 {
+.tete-aside h3 {
     font-size: 1.5rem;
     color: #2c3e50;
     text-align: center;
@@ -1008,21 +1008,21 @@ transition: border-color 0.3s;
     justify-content: space-around;
     flex-grow: 1;
 }
-.statTotal {
+.statTotal, .statTotalMissions {
     background: #f8f9fa;
-    padding: 40px 20px;
+    padding: 20px 10px;
     border-radius: 12px;
     text-align: center;
     transition: transform 0.2s;
 }
-.statTotal .label {
+.statTotal .label, .statTotalMissions .label {
     display: block;
     font-size: 1rem;
     color: #7f8c8d;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
-.statTotal .value {
+.statTotal .value, .statTotalMissions .value {
     display: block;
     font-size: 3rem;
     font-weight: 650;
@@ -1049,7 +1049,7 @@ transition: border-color 0.3s;
     font-weight: 700;
     color: #2c3e50;
 }
-.missions {
+.statTotalMissions {
     background: #fff9e6;
     border-left: 6px solid #f1c40f;
 }

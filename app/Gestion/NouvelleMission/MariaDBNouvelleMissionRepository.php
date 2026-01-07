@@ -22,4 +22,13 @@ class MariaDBNouvelleMissionRepository implements INouvelleMissionRepository {
             ':dep' => $mission->getDep()
         ]);
     }
+
+    public function compterMission(): int {
+        $sql = "SELECT COUNT(*) FROM mission";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute();
+
+        $nbMissions = $stmt->fetch(\PDO::FETCH_ASSOC);
+        return $nbMissions['COUNT(*)'];
+    }
 }

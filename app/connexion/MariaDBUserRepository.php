@@ -4,9 +4,9 @@ namespace App\connexion;
 use \PDO;
 
 class MariaDBUserRepository implements IMembreRepository {
-    private PDO $pdo;
+    private \PDO $pdo;
 
-    public function __construct(PDO $pdo) {
+    public function __construct(\PDO $pdo) {
         $this->pdo = $pdo;
     }
     public function findByEmail(string $email): ?Membre {
@@ -16,7 +16,7 @@ class MariaDBUserRepository implements IMembreRepository {
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute(['email' => $email]);
 
-        $data = $stmt->fetch(PDO::FETCH_ASSOC);
+        $data = $stmt->fetch(\PDO::FETCH_ASSOC);
 
         if (!$data) {
             return null;
