@@ -10,10 +10,6 @@ use App\config\BddConnect;
 $dbConnect = new BddConnect(); // Remplace par le bon namespace si besoin
 $pdo = $dbConnect->connexion();
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
 $verification = new Verification();
 $verification->VerificationConnexion("Admin");
 
