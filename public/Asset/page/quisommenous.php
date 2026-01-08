@@ -9,21 +9,29 @@
         </p>
 
         <div class="video">
-            <video controls width="250">
-                <source src=https://www.agirabcd.fr/COM-INTRAGIR/VIDEOS/AGIRabcd_en_2_mn.mp4" type="video/mp4" />
+            <iframe   
+                src="https://www.youtube.com/embed/Za7ySDJVwjk"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
         </div>
 
         <h1>Ensemble, nous agissons</h1>
+         <div class="ensemble">
+    
+            <p> Des actions en France favorisant l'insertion sociale et professionnelle de personnes de tout âge.
+                Des missions et des projets de co-développement dans les pays en développement, pour renforcer les capacités
+                locales en transmettant les compétences adaptées aux besoins des bénéficiaires.
+            </p>
+            <p>
+                Des actions en partenariat avec des acteurs institutionnels, des collectivités territoriales, des
+                entreprises et et des associations locales.
+            </p>
+        </div>
 
-        <p> Des actions en France favorisant l'insertion sociale et professionnelle de personnes de tout âge.
-            Des missions et des projets de co-développement dans les pays en développement, pour renforcer les capacités
-            locales en transmettant les compétences adaptées aux besoins des bénéficiaires.
-
-            Des actions en partenariat avec des acteurs institutionnels, des collectivités territoriales, des
-            entreprises et et des associations locales.
-        </p>
-
-        <img src="/Asset/img/qui%20somme%20nous%20.png" alt="information divers" class="imgethique">
+        <img src="/Asset/img/quisommenous.png" alt="information divers" class="imgethique">
         <h1 class="hethique">Notre éthique</h1>
 
         <div class="ethique">

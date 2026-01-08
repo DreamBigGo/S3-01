@@ -1,8 +1,14 @@
 {
-  "name": "dreambiggo/s3-01",
+  "name": "sae/dreambiggo",
   "description": "Projet Pédagogique IUT de Paris",
   "require": {
-    "phpunit/phpunit": "^9"
+    "phpunit/phpunit": "^9",
+    "ext-pdo": "*"
   },
-  "license": "proprietary"
+  "license": "proprietary",
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
 }
