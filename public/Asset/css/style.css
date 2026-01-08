@@ -405,8 +405,9 @@ main input{
     border: var(--main-color-bleu) solid 5px;
     height: 4em;
     width: 4em;
-    border-radius: 100%;
+    border-radius: 50%;
     background-color: white;
+    box-sizing: border-box;
 }
 .formulaire .separateur1, .formulaire .separateur2, .formulaire .separateur3{
     height: 5px;
@@ -416,7 +417,11 @@ main input{
 }
 .formulaire .numero1, .formulaire .numero2, .formulaire .numero3, .formulaire .numero4{
     color: var(--main-color-bleu);
-    font-size: 3em;
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    display: block;
 }
 
 .main-form section #form-contact-global {
