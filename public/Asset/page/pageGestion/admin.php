@@ -175,7 +175,7 @@ require_once '../header.php';
                             <td><?= htmlspecialchars($m['Description'] ?? 'N/A') ?></td>
                             <td><?= htmlspecialchars($m['DateDebut'] ?? 'N/A') ?></td>
                             <td><?= htmlspecialchars($m['DateFin'] ?? 'N/A') ?></td>
-                            <td><?= htmlspecialchars($m['Budget'] ?? 'N/A') ?></td>
+                            <td><?= htmlspecialchars($m['Budget'] ?? 'N/A') ?> €</td>
                             <td>
                                 <a href="../traitementPageGestion/traitement-supprimerMission.php?id=<?= $m['IdMission'] ?>" class="btn-supprimer">Supprimer</a>
                             </td>

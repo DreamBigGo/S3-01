@@ -23,8 +23,6 @@ $currentPage = basename($_SERVER['PHP_SELF']);
     <!-- Liens du menu -->
     <a href="/index.php" class="<?= ($currentPage == 'index.php') ? 'active' : '' ?>">Accueil</a>
     <a href="/Asset/page/quisommenous.php" class="<?= ($currentPage == 'quisommenous.php') ? 'active' : '' ?>">Qui sommes-nous</a>
-    <a href="/Asset/page/actionfrance.php" class="<?= ($currentPage == 'actionfrance.php') ? 'active' : '' ?>">Action France</a>
-    <a href="/Asset/page/actionint.php" class="<?= ($currentPage == 'actionint.php') ? 'active' : '' ?>">Action International</a>
     <a href="/Asset/page/NousRejoindre.php" class="<?= ($currentPage == 'NousRejoindre.php') ? 'active' : '' ?>">Nous rejoindre</a>
 
 
@@ -42,8 +40,6 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 <nav class="nav-cache">
     <a href="/index.php" class="<?= ($currentPage == 'index.php') ? 'active' : '' ?>">Accueil</a>
     <a href="/Asset/page/quisommenous.php" class="<?= ($currentPage == 'quisommenous.php') ? 'active' : '' ?>">Qui sommes-nous</a>
-    <a href="/Asset/page/actionfrance.php" class="<?= ($currentPage == 'actionfrance.php') ? 'active' : '' ?>">Action France</a>
-    <a href="/Asset/page/actionint.php" class="<?= ($currentPage == 'actionint.php') ? 'active' : '' ?>">Action International</a>
     <a href="/Asset/page/NousRejoindre.php" class="<?= ($currentPage == 'NousRejoindre.php') ? 'active' : '' ?>">Nous rejoindre</a>
 
     <div class="separateur"></div>
