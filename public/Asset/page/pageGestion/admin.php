@@ -2,13 +2,20 @@
 
 require_once __DIR__ . '/../../../../vendor/autoload.php';
 session_start();
+
+use App\Exceptions\BddConnectException;
+use App\Messages;
 use App\Verification;
 use App\Gestion\NouveauMembre\MariaDBNouveauMembreRepository;
 use App\Gestion\NouvelleMission\MariaDBNouvelleMissionRepository;
 use App\config\BddConnect;
 
-$dbConnect = new BddConnect(); // Remplace par le bon namespace si besoin
-$pdo = $dbConnect->connexion();
+try {
+    $dbConnect = new BddConnect();
+    $pdo = $dbConnect->connexion();
+} catch (BddConnectException $e) {
+    Messages::goHome($e->getMessage(), $e->getType(), "../connexion.php");
+}
 
 $verification = new Verification();
 $verification->VerificationConnexion("Admin");
@@ -222,6 +229,7 @@ require_once '../header.php';
                 <span class="label">Missions en cours</span>
                 <span class="value"><?= $nbMission ?></span>
             </div>
+            <a href="../deconnexion.php" class="btn-deconnexion">Se déconnecter</a>
         </div>
     </aside>
 </main>
