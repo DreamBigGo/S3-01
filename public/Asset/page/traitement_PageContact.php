@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         );
 
         if ($trousseau->save($nouveauMessage)) {
-            Messages::goHome("Votre message a bien été envoyé.", "success", "../../index.php");
+            Messages::goHome("Votre message a bien été envoyé !", "success", "../../index.php");
         }
 
     } catch (BddConnectException $e) {

@@ -137,6 +137,7 @@
             </ul>
             <div class="separation-form"></div>
             <p class="conseille">* Nous vous invitons à vérifier la validité de chaque information transmise afin d’en garantir un traitement optimal.</p>
+            <p class="conseille">* Les données à caractère personnel que vous nous communiquez feront l'objet d'un traitement automatisé aux fins de gestion de votre demande. Vous disposez d'un droit d'accès, de rectification, de suppression, de limitation, d'opposition et de portabilité conformément à la règlement sur la protection des données à caractère personnel. La durée de conservation est de 3 ans.</p>
         </aside>
     </main>
 

@@ -23,7 +23,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         try {
             if(empty($_POST['email']) || empty($_POST['password'])) {
-                throw new AuthentificationException("Tous les champs sont obligatoire");
+                throw new AuthentificationException("Tous les champs sont obligatoires !");
             }
 
             $auth->login($_POST['email'], $_POST['password']);
@@ -32,11 +32,11 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             if($role === 'Admin') {
                 $destination = "pageGestion/admin.php";
-                Messages::goHome("Connexion Réussie", "success", $destination);
+                Messages::goHome("Connexion réussie !", "success", $destination);
             }
             else{
                 $destination = "../../index.php";
-                Messages::goHome("Vous n'êtes pas autorisé a accéder a cette page !", "danger", $destination);
+                Messages::goHome("Vous n'êtes pas autorisé à accéder à cette page !", "danger", $destination);
             }
 
 
@@ -51,15 +51,4 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 else {
     header("Location: ../../../index.php");
     exit();
-}
-
-function VerificationConnexion(string $roleAttendu): void {
-    if (!isset($_SESSION['user_id'])) {
-        Messages::goHome("Vous n'êtes pas autorisé a accéder a cette page !", "danger", "../../../index.php");
-        exit();
-    }
-    if ($_SESSION['user_role'] !== $roleAttendu) {
-        Messages::goHome("Vous n'êtes pas autorisé a accéder a cette page !", "danger", "../../../index.php");
-        exit();
-    }
 }

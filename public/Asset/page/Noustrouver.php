@@ -5,9 +5,7 @@ require_once "header.php" ?>
     <script type="module" src="../js/Carte.js"></script>
 
     <h1>Comment nous rejoindre ?</h1>
-    <p>AGIRabcd est composée de 51 délégations territoriales et 45 antennes partout en France, qui disposent de lieux d'échanges afin de favoriser l'entraide.
-        Trouvez la délégation à proximité de votre lieu de vie et venez rencontrer nos adhérents !
-        Dans chaque délégation territoriale, vous avez la possibilité de vous engager à l'échelle nationale et internationale, en fonction de vos attentes et de vos appétences.</p>
+    <p>AGIRabcd est composée de 51 délégations territoriales et 45 antennes partout en France. Elles disposent de lieux d'échanges afin de favoriser l'entraide. Trouvez la délégation à proximité de votre lieu de vie et venez rencontrer nos adhérents ! Dans chaque délégation territoriale, vous avez la possibilité de vous engager à l'échelle nationale ou internationale, en fonction de vos attentes et de vos appétences.</p>
 
     <div class="SVG" >
         <svg id="carte" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 667 578" xml:space="preserve">

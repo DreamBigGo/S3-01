@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         if ($trousseau->save($nouveauMembre)) {
             Messages::goHome(
-                "Membre ajouté avec succés",
+                "Membre ajouté avec succès !",
                 "success",
                 "../pageGestion/admin.php"
             );

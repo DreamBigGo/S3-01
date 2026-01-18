@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         if ($trousseau->save($nouvellemission)) {
             Messages::goHome(
-                "Mission ajouté avec succés",
+                "Mission ajoutée avec succès !",
                 "success",
                 "../pageGestion/admin.php"
             );
