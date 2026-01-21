@@ -38,7 +38,7 @@ Technologies utilisées :
 
 Remarques :
  - Projet réalisé dans un cadre pédagogique (IUT).
- - Utilisation du serveur local Apache pour les tests.
+ - Utilisation d'une base de données en local sur PHPStrom.
  - Objectif principal : mise en place d'un projet web complet, consolidation des connaissances en frontend avec HTML, CSS et JavaScript, et apprentissage du backend avec PHP, et mise en place et interactivité avec une base de données.
 
 Démonstration :
