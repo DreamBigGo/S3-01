@@ -46,3 +46,17 @@ CREATE TABLE RAPPORT(
                         Affiche VARCHAR(200),
                         CompteRendu VARCHAR(200)
 );
+
+CREATE TABLE contact (
+                         id INT AUTO_INCREMENT PRIMARY KEY,
+                         nom VARCHAR(100) NOT NULL,
+                         prenom VARCHAR(100) NOT NULL,
+                         societe VARCHAR(150),
+                         adresse VARCHAR(255) NOT NULL,
+                         cp VARCHAR(10) NOT NULL,
+                         ville VARCHAR(100) NOT NULL,
+                         telephone VARCHAR(20) NOT NULL,
+                         email VARCHAR(150) NOT NULL,
+                         objet VARCHAR(100) NOT NULL,
+                         message TEXT NOT NULL
+);
