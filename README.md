@@ -47,7 +47,9 @@ Prérequis pour testé le projet :
 
 Démonstration :
 
-[Je n'ai pas encore tourné la vidéo de démonstration]
+ - Cette vidéo présente le contexte, les fonctionnalités principales et une démonstration rapide du projet.
+
+[![Vidéo de présentation](https://img.youtube.com/vi/zpHX7cMLyY8/0.jpg)](https://youtu.be/zpHX7cMLyY8)
 
 
 
